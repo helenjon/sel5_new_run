@@ -1,0 +1,14 @@
+*.pyc
+*.txt
+*.log
+*.xml
+
+
+src/Readme.txt
+src/apiregr/
+src/ds-file/
+src/sql/
+
+*~
+*.egg-info
+dist/
