@@ -2,13 +2,7 @@
 *.txt
 *.log
 *.xml
+*.png
 
-
-src/Readme.txt
-src/apiregr/
-src/ds-file/
-src/sql/
-
-*~
-*.egg-info
-dist/
+general/test2.py
+general/test1.py
