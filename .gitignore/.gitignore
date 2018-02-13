@@ -1,9 +1,0 @@
-*.pyc
-*.txt
-*.log
-*.xml
-*.png
-
-general/test2.py
-general/test1.py
-.cache
