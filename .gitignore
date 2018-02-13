@@ -1,0 +1,9 @@
+# Byte-compiled / optimized / DLL files
+.pyc
+.cache
+.eggs
+*.pyc
+*.egg-info/
+*.log
+/geleral/test1.py
+/geleral/test2.py
