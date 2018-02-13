@@ -1,0 +1,5 @@
+{
+  "test_login.py::TestLogin::()::test_login_incorrect": true, 
+  "test_main_admin.py::TestMainAdmin::()::test_check_alphabetick_countries": true, 
+  "test_main_app.py::TestMainApp::()::test_compare_data": true
+}

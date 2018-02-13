@@ -1,0 +1,149 @@
+[2.997][INFO]: COMMAND InitSession {
+   "capabilities": {
+      "alwaysMatch": {
+         "browserName": "chrome",
+         "goog:chromeOptions": {
+            "args": [  ],
+            "extensions": [  ]
+         },
+         "platformName": "any"
+      },
+      "firstMatch": [ {
+
+      } ]
+   },
+   "desiredCapabilities": {
+      "browserName": "chrome",
+      "goog:chromeOptions": {
+         "args": [  ],
+         "extensions": [  ]
+      },
+      "platform": "ANY",
+      "version": ""
+   }
+}
+[3.001][INFO]: Populating Preferences file: {
+   "alternate_error_pages": {
+      "enabled": false
+   },
+   "autofill": {
+      "enabled": false
+   },
+   "browser": {
+      "check_default_browser": false
+   },
+   "distribution": {
+      "import_bookmarks": false,
+      "import_history": false,
+      "import_search_engine": false,
+      "make_chrome_default_for_user": false,
+      "skip_first_run_ui": true
+   },
+   "dns_prefetching": {
+      "enabled": false
+   },
+   "profile": {
+      "content_settings": {
+         "pattern_pairs": {
+            "https://*,*": {
+               "media-stream": {
+                  "audio": "Default",
+                  "video": "Default"
+               }
+            }
+         }
+      },
+      "default_content_setting_values": {
+         "geolocation": 1
+      },
+      "default_content_settings": {
+         "geolocation": 1,
+         "mouselock": 1,
+         "notifications": 1,
+         "popups": 1,
+         "ppapi-broker": 1
+      },
+      "password_manager_enabled": false
+   },
+   "safebrowsing": {
+      "enabled": false
+   },
+   "search": {
+      "suggest_enabled": false
+   },
+   "translate": {
+      "enabled": false
+   }
+}
+[3.005][INFO]: Populating Local State file: {
+   "background_mode": {
+      "enabled": false
+   },
+   "ssl": {
+      "rev_checking": {
+         "enabled": false
+      }
+   }
+}
+[3.037][INFO]: Launching chrome: "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --disable-background-networking --disable-client-side-phishing-detection --disable-default-apps --disable-hang-monitor --disable-popup-blocking --disable-prompt-on-repost --disable-sync --disable-web-resources --enable-automation --enable-logging --force-fieldtrials=SiteIsolationExtensions/Control --ignore-certificate-errors --load-extension="C:\Users\omokina\AppData\Local\Temp\scoped_dir2424_22541\internal" --log-level=0 --metrics-recording-only --no-first-run --password-store=basic --remote-debugging-port=12292 --test-type=webdriver --use-mock-keychain --user-data-dir="C:\Users\omokina\AppData\Local\Temp\scoped_dir2424_30965" data:,
+[3.640][INFO]: resolved localhost to ["::1","127.0.0.1"]
+[4.667][INFO]: RESPONSE InitSession {
+   "acceptSslCerts": true,
+   "applicationCacheEnabled": false,
+   "browserConnectionEnabled": false,
+   "browserName": "chrome",
+   "chrome": {
+      "chromedriverVersion": "2.34.522940 (1a76f96f66e3ca7b8e57d503b4dd3bccfba87af1)",
+      "userDataDir": "C:\\Users\\omokina\\AppData\\Local\\Temp\\scoped_dir2424_30965"
+   },
+   "cssSelectorsEnabled": true,
+   "databaseEnabled": false,
+   "handlesAlerts": true,
+   "hasTouchScreen": false,
+   "javascriptEnabled": true,
+   "locationContextEnabled": true,
+   "mobileEmulationEnabled": false,
+   "nativeEvents": true,
+   "networkConnectionEnabled": false,
+   "pageLoadStrategy": "normal",
+   "platform": "Windows NT",
+   "rotatable": false,
+   "setWindowRect": true,
+   "takesHeapSnapshot": true,
+   "~~~": "..."
+}
+[4.669][INFO]: COMMAND SetImplicitWait {
+   "ms": 300000.0,
+   "sessionId": "7bb072c3508b83ee213ba8d40916bfce"
+}
+[4.669][INFO]: RESPONSE SetImplicitWait
+[4.670][INFO]: COMMAND MaximizeWindow {
+   "sessionId": "7bb072c3508b83ee213ba8d40916bfce",
+   "windowHandle": "current"
+}
+[4.671][INFO]: resolved localhost to ["::1","127.0.0.1"]
+[5.800][INFO]: RESPONSE MaximizeWindow
+[5.844][INFO]: COMMAND GetUrl {
+
+}
+[5.844][INFO]: Waiting for pending navigations...
+[5.864][INFO]: Done waiting for pending navigations. Status: ok
+[5.868][INFO]: Waiting for pending navigations...
+[5.869][INFO]: Done waiting for pending navigations. Status: ok
+[5.869][INFO]: RESPONSE GetUrl "data:,"
+[5.870][INFO]: COMMAND Screenshot {
+
+}
+[5.870][INFO]: Waiting for pending navigations...
+[5.871][INFO]: Done waiting for pending navigations. Status: ok
+[6.268][INFO]: Waiting for pending navigations...
+[6.269][INFO]: Done waiting for pending navigations. Status: ok
+[6.269][INFO]: RESPONSE Screenshot "iVBORw0KGgoAAAANSUhEUgAAB4AAAAOnCAIAAABOJswMAAAc1klEQVR4nOzYwQ3AIBDAsNL9dz6WIEJC9gR5Z83MBwAAAAAAp/23AwAAAAAAeJMBDQAAAABAwoAGAAAAACBhQAMAAAAAkDCgAQAAAABIGNAAAAAAACQMaAAAAAAAEgY0AAAAAAAJAxoAAAAAgIQBD..."
+[6.271][INFO]: COMMAND GetSource {
+
+}
+[6.271][INFO]: Waiting for pending navigations...
+[6.272][INFO]: Done waiting for pending navigations. Status: ok
+[6.274][INFO]: Waiting for pending navigations...
+[6.274][INFO]: Done waiting for pending navigations. Status: ok
+[6.274][INFO]: RESPONSE GetSource "\u003Chtml xmlns=\"http://www.w3.org/1999/xhtml\">\u003Chead>\u003C/head>\u003Cbody>\u003Cpre style=\"word-wrap: break-word; white-space: pre-wrap;\">\u003C/pre>\u003C/body>\u003C/html>"

@@ -1,0 +1,2517 @@
+[2.993][INFO]: COMMAND InitSession {
+   "capabilities": {
+      "alwaysMatch": {
+         "browserName": "chrome",
+         "goog:chromeOptions": {
+            "args": [  ],
+            "extensions": [  ]
+         },
+         "platformName": "any"
+      },
+      "firstMatch": [ {
+
+      } ]
+   },
+   "desiredCapabilities": {
+      "browserName": "chrome",
+      "goog:chromeOptions": {
+         "args": [  ],
+         "extensions": [  ]
+      },
+      "platform": "ANY",
+      "version": ""
+   }
+}
+[2.996][INFO]: Populating Preferences file: {
+   "alternate_error_pages": {
+      "enabled": false
+   },
+   "autofill": {
+      "enabled": false
+   },
+   "browser": {
+      "check_default_browser": false
+   },
+   "distribution": {
+      "import_bookmarks": false,
+      "import_history": false,
+      "import_search_engine": false,
+      "make_chrome_default_for_user": false,
+      "skip_first_run_ui": true
+   },
+   "dns_prefetching": {
+      "enabled": false
+   },
+   "profile": {
+      "content_settings": {
+         "pattern_pairs": {
+            "https://*,*": {
+               "media-stream": {
+                  "audio": "Default",
+                  "video": "Default"
+               }
+            }
+         }
+      },
+      "default_content_setting_values": {
+         "geolocation": 1
+      },
+      "default_content_settings": {
+         "geolocation": 1,
+         "mouselock": 1,
+         "notifications": 1,
+         "popups": 1,
+         "ppapi-broker": 1
+      },
+      "password_manager_enabled": false
+   },
+   "safebrowsing": {
+      "enabled": false
+   },
+   "search": {
+      "suggest_enabled": false
+   },
+   "translate": {
+      "enabled": false
+   }
+}
+[2.999][INFO]: Populating Local State file: {
+   "background_mode": {
+      "enabled": false
+   },
+   "ssl": {
+      "rev_checking": {
+         "enabled": false
+      }
+   }
+}
+[3.012][INFO]: Launching chrome: "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --disable-background-networking --disable-client-side-phishing-detection --disable-default-apps --disable-hang-monitor --disable-popup-blocking --disable-prompt-on-repost --disable-sync --disable-web-resources --enable-automation --enable-logging --force-fieldtrials=SiteIsolationExtensions/Control --ignore-certificate-errors --load-extension="C:\Users\omokina\AppData\Local\Temp\scoped_dir11960_32374\internal" --log-level=0 --metrics-recording-only --no-first-run --password-store=basic --remote-debugging-port=12819 --test-type=webdriver --use-mock-keychain --user-data-dir="C:\Users\omokina\AppData\Local\Temp\scoped_dir11960_4849" data:,
+[3.356][INFO]: resolved localhost to ["::1","127.0.0.1"]
+[4.374][INFO]: RESPONSE InitSession {
+   "acceptSslCerts": true,
+   "applicationCacheEnabled": false,
+   "browserConnectionEnabled": false,
+   "browserName": "chrome",
+   "chrome": {
+      "chromedriverVersion": "2.34.522940 (1a76f96f66e3ca7b8e57d503b4dd3bccfba87af1)",
+      "userDataDir": "C:\\Users\\omokina\\AppData\\Local\\Temp\\scoped_dir11960_4849"
+   },
+   "cssSelectorsEnabled": true,
+   "databaseEnabled": false,
+   "handlesAlerts": true,
+   "hasTouchScreen": false,
+   "javascriptEnabled": true,
+   "locationContextEnabled": true,
+   "mobileEmulationEnabled": false,
+   "nativeEvents": true,
+   "networkConnectionEnabled": false,
+   "pageLoadStrategy": "normal",
+   "platform": "Windows NT",
+   "rotatable": false,
+   "setWindowRect": true,
+   "takesHeapSnapshot": true,
+   "~~~": "..."
+}
+[4.376][INFO]: COMMAND SetImplicitWait {
+   "ms": 300000.0,
+   "sessionId": "8bdcac0edad8a2000c1d1e502df3847d"
+}
+[4.376][INFO]: RESPONSE SetImplicitWait
+[4.378][INFO]: COMMAND MaximizeWindow {
+   "sessionId": "8bdcac0edad8a2000c1d1e502df3847d",
+   "windowHandle": "current"
+}
+[4.379][INFO]: resolved localhost to ["::1","127.0.0.1"]
+[5.493][INFO]: RESPONSE MaximizeWindow
+[5.495][INFO]: COMMAND SetImplicitWait {
+   "ms": 30000.0,
+   "sessionId": "8bdcac0edad8a2000c1d1e502df3847d"
+}
+[5.495][INFO]: RESPONSE SetImplicitWait
+[5.497][INFO]: COMMAND Navigate {
+   "sessionId": "8bdcac0edad8a2000c1d1e502df3847d",
+   "url": "http://localhost:8081/litecart/admin/login.php"
+}
+[5.497][INFO]: Waiting for pending navigations...
+[5.516][INFO]: Done waiting for pending navigations. Status: ok
+[6.054][INFO]: Waiting for pending navigations...
+[7.832][INFO]: Done waiting for pending navigations. Status: ok
+[7.832][INFO]: RESPONSE Navigate
+[7.835][INFO]: COMMAND FindElement {
+   "sessionId": "8bdcac0edad8a2000c1d1e502df3847d",
+   "using": "name",
+   "value": "username"
+}
+[7.835][INFO]: Waiting for pending navigations...
+[7.836][INFO]: Done waiting for pending navigations. Status: ok
+[7.853][INFO]: Waiting for pending navigations...
+[7.854][INFO]: Done waiting for pending navigations. Status: ok
+[7.854][INFO]: RESPONSE FindElement {
+   "ELEMENT": "0.9367538628029879-1"
+}
+[7.856][INFO]: COMMAND TypeElement {
+   "id": "0.9367538628029879-1",
+   "sessionId": "8bdcac0edad8a2000c1d1e502df3847d",
+   "text": "admin",
+   "value": [ "a", "d", "m", "i", "n" ]
+}
+[7.856][INFO]: Waiting for pending navigations...
+[7.857][INFO]: Done waiting for pending navigations. Status: ok
+[7.897][INFO]: Waiting for pending navigations...
+[7.897][INFO]: Done waiting for pending navigations. Status: ok
+[7.897][INFO]: RESPONSE TypeElement
+[7.900][INFO]: COMMAND FindElement {
+   "sessionId": "8bdcac0edad8a2000c1d1e502df3847d",
+   "using": "name",
+   "value": "password"
+}
+[7.900][INFO]: Waiting for pending navigations...
+[7.901][INFO]: Done waiting for pending navigations. Status: ok
+[7.913][INFO]: Waiting for pending navigations...
+[7.914][INFO]: Done waiting for pending navigations. Status: ok
+[7.914][INFO]: RESPONSE FindElement {
+   "ELEMENT": "0.9367538628029879-2"
+}
+[7.916][INFO]: COMMAND TypeElement {
+   "id": "0.9367538628029879-2",
+   "sessionId": "8bdcac0edad8a2000c1d1e502df3847d",
+   "text": "admin",
+   "value": [ "a", "d", "m", "i", "n" ]
+}
+[7.916][INFO]: Waiting for pending navigations...
+[7.917][INFO]: Done waiting for pending navigations. Status: ok
+[7.955][INFO]: Waiting for pending navigations...
+[7.955][INFO]: Done waiting for pending navigations. Status: ok
+[7.955][INFO]: RESPONSE TypeElement
+[7.957][INFO]: COMMAND FindElement {
+   "sessionId": "8bdcac0edad8a2000c1d1e502df3847d",
+   "using": "name",
+   "value": "login"
+}
+[7.957][INFO]: Waiting for pending navigations...
+[7.958][INFO]: Done waiting for pending navigations. Status: ok
+[7.969][INFO]: Waiting for pending navigations...
+[7.970][INFO]: Done waiting for pending navigations. Status: ok
+[7.970][INFO]: RESPONSE FindElement {
+   "ELEMENT": "0.9367538628029879-3"
+}
+[7.972][INFO]: COMMAND ClickElement {
+   "id": "0.9367538628029879-3",
+   "sessionId": "8bdcac0edad8a2000c1d1e502df3847d"
+}
+[7.972][INFO]: Waiting for pending navigations...
+[7.973][INFO]: Done waiting for pending navigations. Status: ok
+[8.023][INFO]: Waiting for pending navigations...
+[8.690][INFO]: Done waiting for pending navigations. Status: ok
+[8.690][INFO]: RESPONSE ClickElement
+[8.695][INFO]: COMMAND FindElement {
+   "sessionId": "8bdcac0edad8a2000c1d1e502df3847d",
+   "using": "link text",
+   "value": "Countries"
+}
+[8.695][INFO]: Waiting for pending navigations...
+[8.696][INFO]: Done waiting for pending navigations. Status: ok
+[8.729][INFO]: Waiting for pending navigations...
+[8.731][INFO]: Done waiting for pending navigations. Status: ok
+[8.731][INFO]: RESPONSE FindElement {
+   "ELEMENT": "0.17121746477472954-1"
+}
+[8.733][INFO]: COMMAND ClickElement {
+   "id": "0.17121746477472954-1",
+   "sessionId": "8bdcac0edad8a2000c1d1e502df3847d"
+}
+[8.733][INFO]: Waiting for pending navigations...
+[8.734][INFO]: Done waiting for pending navigations. Status: ok
+[8.789][INFO]: Waiting for pending navigations...
+[9.374][INFO]: Done waiting for pending navigations. Status: ok
+[9.374][INFO]: RESPONSE ClickElement
+[9.376][INFO]: COMMAND FindElements {
+   "sessionId": "8bdcac0edad8a2000c1d1e502df3847d",
+   "using": "xpath",
+   "value": ".//*[@id='content']/form/table/tbody/tr/td[@style]/a"
+}
+[9.376][INFO]: Waiting for pending navigations...
+[9.377][INFO]: Done waiting for pending navigations. Status: ok
+[9.403][INFO]: Waiting for pending navigations...
+[9.404][INFO]: Done waiting for pending navigations. Status: ok
+[9.404][INFO]: RESPONSE FindElements [ {
+   "ELEMENT": "0.6384143726289133-1"
+}, {
+   "ELEMENT": "0.6384143726289133-2"
+}, {
+   "ELEMENT": "0.6384143726289133-3"
+}, {
+   "ELEMENT": "0.6384143726289133-4"
+}, {
+   "ELEMENT": "0.6384143726289133-5"
+}, {
+   "ELEMENT": "0.6384143726289133-6"
+}, {
+   "ELEMENT": "0.6384143726289133-7"
+}, {
+   "ELEMENT": "0.6384143726289133-8"
+}, {
+   "ELEMENT": "0.6384143726289133-9"
+}, {
+   "ELEMENT": "0.6384143726289133-10"
+}, {
+   "ELEMENT": "0.6384143726289133-11"
+}, {
+   "ELEMENT": "0.6384143726289133-12"
+}, {
+   "ELEMENT": "0.6384143726289133-13"
+}, {
+   "ELEMENT": "0.6384143726289133-14"
+}, {
+   "ELEMENT": "0.6384143726289133-15"
+}, {
+   "ELEMENT": "0.6384143726289133-16"
+}, {
+   "ELEMENT": "0.6384143726289133-17"
+}, {
+   "ELEMENT": "0.6384143726289133-18"
+}, {
+   "ELEMENT": "0.6384143726289133-19"
+}, "..." ]
+[9.408][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-1",
+   "name": "textContent"
+}
+[9.409][INFO]: Waiting for pending navigations...
+[9.409][INFO]: Done waiting for pending navigations. Status: ok
+[9.413][INFO]: Waiting for pending navigations...
+[9.414][INFO]: Done waiting for pending navigations. Status: ok
+[9.414][INFO]: RESPONSE GetElementAttribute ""
+[9.416][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-2",
+   "name": "textContent"
+}
+[9.416][INFO]: Waiting for pending navigations...
+[9.417][INFO]: Done waiting for pending navigations. Status: ok
+[9.420][INFO]: Waiting for pending navigations...
+[9.421][INFO]: Done waiting for pending navigations. Status: ok
+[9.421][INFO]: RESPONSE GetElementAttribute ""
+[9.422][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-3",
+   "name": "textContent"
+}
+[9.422][INFO]: Waiting for pending navigations...
+[9.423][INFO]: Done waiting for pending navigations. Status: ok
+[9.426][INFO]: Waiting for pending navigations...
+[9.427][INFO]: Done waiting for pending navigations. Status: ok
+[9.427][INFO]: RESPONSE GetElementAttribute ""
+[9.429][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-4",
+   "name": "textContent"
+}
+[9.429][INFO]: Waiting for pending navigations...
+[9.429][INFO]: Done waiting for pending navigations. Status: ok
+[9.433][INFO]: Waiting for pending navigations...
+[9.434][INFO]: Done waiting for pending navigations. Status: ok
+[9.434][INFO]: RESPONSE GetElementAttribute ""
+[9.436][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-5",
+   "name": "textContent"
+}
+[9.436][INFO]: Waiting for pending navigations...
+[9.437][INFO]: Done waiting for pending navigations. Status: ok
+[9.440][INFO]: Waiting for pending navigations...
+[9.441][INFO]: Done waiting for pending navigations. Status: ok
+[9.441][INFO]: RESPONSE GetElementAttribute ""
+[9.443][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-6",
+   "name": "textContent"
+}
+[9.443][INFO]: Waiting for pending navigations...
+[9.443][INFO]: Done waiting for pending navigations. Status: ok
+[9.447][INFO]: Waiting for pending navigations...
+[9.447][INFO]: Done waiting for pending navigations. Status: ok
+[9.447][INFO]: RESPONSE GetElementAttribute ""
+[9.449][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-7",
+   "name": "textContent"
+}
+[9.449][INFO]: Waiting for pending navigations...
+[9.450][INFO]: Done waiting for pending navigations. Status: ok
+[9.453][INFO]: Waiting for pending navigations...
+[9.454][INFO]: Done waiting for pending navigations. Status: ok
+[9.454][INFO]: RESPONSE GetElementAttribute ""
+[9.455][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-8",
+   "name": "textContent"
+}
+[9.455][INFO]: Waiting for pending navigations...
+[9.456][INFO]: Done waiting for pending navigations. Status: ok
+[9.459][INFO]: Waiting for pending navigations...
+[9.460][INFO]: Done waiting for pending navigations. Status: ok
+[9.460][INFO]: RESPONSE GetElementAttribute ""
+[9.461][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-9",
+   "name": "textContent"
+}
+[9.461][INFO]: Waiting for pending navigations...
+[9.462][INFO]: Done waiting for pending navigations. Status: ok
+[9.466][INFO]: Waiting for pending navigations...
+[9.466][INFO]: Done waiting for pending navigations. Status: ok
+[9.466][INFO]: RESPONSE GetElementAttribute ""
+[9.468][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-10",
+   "name": "textContent"
+}
+[9.468][INFO]: Waiting for pending navigations...
+[9.469][INFO]: Done waiting for pending navigations. Status: ok
+[9.472][INFO]: Waiting for pending navigations...
+[9.473][INFO]: Done waiting for pending navigations. Status: ok
+[9.473][INFO]: RESPONSE GetElementAttribute ""
+[9.474][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-11",
+   "name": "textContent"
+}
+[9.474][INFO]: Waiting for pending navigations...
+[9.475][INFO]: Done waiting for pending navigations. Status: ok
+[9.478][INFO]: Waiting for pending navigations...
+[9.479][INFO]: Done waiting for pending navigations. Status: ok
+[9.479][INFO]: RESPONSE GetElementAttribute ""
+[9.481][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-12",
+   "name": "textContent"
+}
+[9.481][INFO]: Waiting for pending navigations...
+[9.481][INFO]: Done waiting for pending navigations. Status: ok
+[9.485][INFO]: Waiting for pending navigations...
+[9.485][INFO]: Done waiting for pending navigations. Status: ok
+[9.485][INFO]: RESPONSE GetElementAttribute ""
+[9.487][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-13",
+   "name": "textContent"
+}
+[9.487][INFO]: Waiting for pending navigations...
+[9.487][INFO]: Done waiting for pending navigations. Status: ok
+[9.491][INFO]: Waiting for pending navigations...
+[9.492][INFO]: Done waiting for pending navigations. Status: ok
+[9.492][INFO]: RESPONSE GetElementAttribute ""
+[9.493][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-14",
+   "name": "textContent"
+}
+[9.493][INFO]: Waiting for pending navigations...
+[9.494][INFO]: Done waiting for pending navigations. Status: ok
+[9.498][INFO]: Waiting for pending navigations...
+[9.498][INFO]: Done waiting for pending navigations. Status: ok
+[9.498][INFO]: RESPONSE GetElementAttribute ""
+[9.500][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-15",
+   "name": "textContent"
+}
+[9.500][INFO]: Waiting for pending navigations...
+[9.501][INFO]: Done waiting for pending navigations. Status: ok
+[9.504][INFO]: Waiting for pending navigations...
+[9.505][INFO]: Done waiting for pending navigations. Status: ok
+[9.505][INFO]: RESPONSE GetElementAttribute ""
+[9.506][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-16",
+   "name": "textContent"
+}
+[9.507][INFO]: Waiting for pending navigations...
+[9.507][INFO]: Done waiting for pending navigations. Status: ok
+[9.511][INFO]: Waiting for pending navigations...
+[9.511][INFO]: Done waiting for pending navigations. Status: ok
+[9.511][INFO]: RESPONSE GetElementAttribute ""
+[9.513][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-17",
+   "name": "textContent"
+}
+[9.513][INFO]: Waiting for pending navigations...
+[9.514][INFO]: Done waiting for pending navigations. Status: ok
+[9.517][INFO]: Waiting for pending navigations...
+[9.518][INFO]: Done waiting for pending navigations. Status: ok
+[9.518][INFO]: RESPONSE GetElementAttribute ""
+[9.520][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-18",
+   "name": "textContent"
+}
+[9.520][INFO]: Waiting for pending navigations...
+[9.520][INFO]: Done waiting for pending navigations. Status: ok
+[9.524][INFO]: Waiting for pending navigations...
+[9.524][INFO]: Done waiting for pending navigations. Status: ok
+[9.524][INFO]: RESPONSE GetElementAttribute ""
+[9.526][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-19",
+   "name": "textContent"
+}
+[9.526][INFO]: Waiting for pending navigations...
+[9.527][INFO]: Done waiting for pending navigations. Status: ok
+[9.530][INFO]: Waiting for pending navigations...
+[9.531][INFO]: Done waiting for pending navigations. Status: ok
+[9.531][INFO]: RESPONSE GetElementAttribute ""
+[9.533][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-20",
+   "name": "textContent"
+}
+[9.533][INFO]: Waiting for pending navigations...
+[9.534][INFO]: Done waiting for pending navigations. Status: ok
+[9.537][INFO]: Waiting for pending navigations...
+[9.538][INFO]: Done waiting for pending navigations. Status: ok
+[9.538][INFO]: RESPONSE GetElementAttribute ""
+[9.540][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-21",
+   "name": "textContent"
+}
+[9.540][INFO]: Waiting for pending navigations...
+[9.540][INFO]: Done waiting for pending navigations. Status: ok
+[9.544][INFO]: Waiting for pending navigations...
+[9.544][INFO]: Done waiting for pending navigations. Status: ok
+[9.544][INFO]: RESPONSE GetElementAttribute ""
+[9.546][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-22",
+   "name": "textContent"
+}
+[9.546][INFO]: Waiting for pending navigations...
+[9.547][INFO]: Done waiting for pending navigations. Status: ok
+[9.550][INFO]: Waiting for pending navigations...
+[9.550][INFO]: Done waiting for pending navigations. Status: ok
+[9.550][INFO]: RESPONSE GetElementAttribute ""
+[9.552][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-23",
+   "name": "textContent"
+}
+[9.552][INFO]: Waiting for pending navigations...
+[9.553][INFO]: Done waiting for pending navigations. Status: ok
+[9.556][INFO]: Waiting for pending navigations...
+[9.557][INFO]: Done waiting for pending navigations. Status: ok
+[9.557][INFO]: RESPONSE GetElementAttribute ""
+[9.558][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-24",
+   "name": "textContent"
+}
+[9.558][INFO]: Waiting for pending navigations...
+[9.559][INFO]: Done waiting for pending navigations. Status: ok
+[9.563][INFO]: Waiting for pending navigations...
+[9.564][INFO]: Done waiting for pending navigations. Status: ok
+[9.564][INFO]: RESPONSE GetElementAttribute ""
+[9.566][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-25",
+   "name": "textContent"
+}
+[9.566][INFO]: Waiting for pending navigations...
+[9.567][INFO]: Done waiting for pending navigations. Status: ok
+[9.571][INFO]: Waiting for pending navigations...
+[9.571][INFO]: Done waiting for pending navigations. Status: ok
+[9.571][INFO]: RESPONSE GetElementAttribute ""
+[9.573][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-26",
+   "name": "textContent"
+}
+[9.573][INFO]: Waiting for pending navigations...
+[9.574][INFO]: Done waiting for pending navigations. Status: ok
+[9.577][INFO]: Waiting for pending navigations...
+[9.578][INFO]: Done waiting for pending navigations. Status: ok
+[9.578][INFO]: RESPONSE GetElementAttribute ""
+[9.580][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-27",
+   "name": "textContent"
+}
+[9.580][INFO]: Waiting for pending navigations...
+[9.580][INFO]: Done waiting for pending navigations. Status: ok
+[9.584][INFO]: Waiting for pending navigations...
+[9.585][INFO]: Done waiting for pending navigations. Status: ok
+[9.585][INFO]: RESPONSE GetElementAttribute ""
+[9.587][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-28",
+   "name": "textContent"
+}
+[9.587][INFO]: Waiting for pending navigations...
+[9.587][INFO]: Done waiting for pending navigations. Status: ok
+[9.591][INFO]: Waiting for pending navigations...
+[9.591][INFO]: Done waiting for pending navigations. Status: ok
+[9.591][INFO]: RESPONSE GetElementAttribute ""
+[9.593][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-29",
+   "name": "textContent"
+}
+[9.593][INFO]: Waiting for pending navigations...
+[9.594][INFO]: Done waiting for pending navigations. Status: ok
+[9.597][INFO]: Waiting for pending navigations...
+[9.598][INFO]: Done waiting for pending navigations. Status: ok
+[9.598][INFO]: RESPONSE GetElementAttribute ""
+[9.600][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-30",
+   "name": "textContent"
+}
+[9.600][INFO]: Waiting for pending navigations...
+[9.600][INFO]: Done waiting for pending navigations. Status: ok
+[9.604][INFO]: Waiting for pending navigations...
+[9.605][INFO]: Done waiting for pending navigations. Status: ok
+[9.605][INFO]: RESPONSE GetElementAttribute ""
+[9.606][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-31",
+   "name": "textContent"
+}
+[9.606][INFO]: Waiting for pending navigations...
+[9.607][INFO]: Done waiting for pending navigations. Status: ok
+[9.610][INFO]: Waiting for pending navigations...
+[9.611][INFO]: Done waiting for pending navigations. Status: ok
+[9.611][INFO]: RESPONSE GetElementAttribute ""
+[9.613][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-32",
+   "name": "textContent"
+}
+[9.613][INFO]: Waiting for pending navigations...
+[9.613][INFO]: Done waiting for pending navigations. Status: ok
+[9.617][INFO]: Waiting for pending navigations...
+[9.618][INFO]: Done waiting for pending navigations. Status: ok
+[9.618][INFO]: RESPONSE GetElementAttribute ""
+[9.619][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-33",
+   "name": "textContent"
+}
+[9.619][INFO]: Waiting for pending navigations...
+[9.620][INFO]: Done waiting for pending navigations. Status: ok
+[9.623][INFO]: Waiting for pending navigations...
+[9.624][INFO]: Done waiting for pending navigations. Status: ok
+[9.624][INFO]: RESPONSE GetElementAttribute ""
+[9.625][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-34",
+   "name": "textContent"
+}
+[9.625][INFO]: Waiting for pending navigations...
+[9.626][INFO]: Done waiting for pending navigations. Status: ok
+[9.630][INFO]: Waiting for pending navigations...
+[9.630][INFO]: Done waiting for pending navigations. Status: ok
+[9.630][INFO]: RESPONSE GetElementAttribute ""
+[9.632][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-35",
+   "name": "textContent"
+}
+[9.632][INFO]: Waiting for pending navigations...
+[9.633][INFO]: Done waiting for pending navigations. Status: ok
+[9.636][INFO]: Waiting for pending navigations...
+[9.637][INFO]: Done waiting for pending navigations. Status: ok
+[9.637][INFO]: RESPONSE GetElementAttribute ""
+[9.638][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-36",
+   "name": "textContent"
+}
+[9.638][INFO]: Waiting for pending navigations...
+[9.639][INFO]: Done waiting for pending navigations. Status: ok
+[9.643][INFO]: Waiting for pending navigations...
+[9.643][INFO]: Done waiting for pending navigations. Status: ok
+[9.643][INFO]: RESPONSE GetElementAttribute ""
+[9.645][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-37",
+   "name": "textContent"
+}
+[9.645][INFO]: Waiting for pending navigations...
+[9.646][INFO]: Done waiting for pending navigations. Status: ok
+[9.649][INFO]: Waiting for pending navigations...
+[9.650][INFO]: Done waiting for pending navigations. Status: ok
+[9.650][INFO]: RESPONSE GetElementAttribute ""
+[9.651][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-38",
+   "name": "textContent"
+}
+[9.651][INFO]: Waiting for pending navigations...
+[9.652][INFO]: Done waiting for pending navigations. Status: ok
+[9.656][INFO]: Waiting for pending navigations...
+[9.656][INFO]: Done waiting for pending navigations. Status: ok
+[9.656][INFO]: RESPONSE GetElementAttribute ""
+[9.658][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-39",
+   "name": "textContent"
+}
+[9.658][INFO]: Waiting for pending navigations...
+[9.658][INFO]: Done waiting for pending navigations. Status: ok
+[9.662][INFO]: Waiting for pending navigations...
+[9.663][INFO]: Done waiting for pending navigations. Status: ok
+[9.663][INFO]: RESPONSE GetElementAttribute ""
+[9.664][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-40",
+   "name": "textContent"
+}
+[9.664][INFO]: Waiting for pending navigations...
+[9.665][INFO]: Done waiting for pending navigations. Status: ok
+[9.669][INFO]: Waiting for pending navigations...
+[9.669][INFO]: Done waiting for pending navigations. Status: ok
+[9.669][INFO]: RESPONSE GetElementAttribute ""
+[9.671][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-41",
+   "name": "textContent"
+}
+[9.671][INFO]: Waiting for pending navigations...
+[9.671][INFO]: Done waiting for pending navigations. Status: ok
+[9.675][INFO]: Waiting for pending navigations...
+[9.675][INFO]: Done waiting for pending navigations. Status: ok
+[9.675][INFO]: RESPONSE GetElementAttribute ""
+[9.677][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-42",
+   "name": "textContent"
+}
+[9.677][INFO]: Waiting for pending navigations...
+[9.677][INFO]: Done waiting for pending navigations. Status: ok
+[9.681][INFO]: Waiting for pending navigations...
+[9.681][INFO]: Done waiting for pending navigations. Status: ok
+[9.681][INFO]: RESPONSE GetElementAttribute ""
+[9.683][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-43",
+   "name": "textContent"
+}
+[9.683][INFO]: Waiting for pending navigations...
+[9.683][INFO]: Done waiting for pending navigations. Status: ok
+[9.687][INFO]: Waiting for pending navigations...
+[9.687][INFO]: Done waiting for pending navigations. Status: ok
+[9.687][INFO]: RESPONSE GetElementAttribute ""
+[9.689][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-44",
+   "name": "textContent"
+}
+[9.689][INFO]: Waiting for pending navigations...
+[9.689][INFO]: Done waiting for pending navigations. Status: ok
+[9.693][INFO]: Waiting for pending navigations...
+[9.693][INFO]: Done waiting for pending navigations. Status: ok
+[9.693][INFO]: RESPONSE GetElementAttribute ""
+[9.695][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-45",
+   "name": "textContent"
+}
+[9.695][INFO]: Waiting for pending navigations...
+[9.696][INFO]: Done waiting for pending navigations. Status: ok
+[9.699][INFO]: Waiting for pending navigations...
+[9.700][INFO]: Done waiting for pending navigations. Status: ok
+[9.700][INFO]: RESPONSE GetElementAttribute ""
+[9.702][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-46",
+   "name": "textContent"
+}
+[9.702][INFO]: Waiting for pending navigations...
+[9.702][INFO]: Done waiting for pending navigations. Status: ok
+[9.706][INFO]: Waiting for pending navigations...
+[9.706][INFO]: Done waiting for pending navigations. Status: ok
+[9.706][INFO]: RESPONSE GetElementAttribute ""
+[9.708][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-47",
+   "name": "textContent"
+}
+[9.708][INFO]: Waiting for pending navigations...
+[9.708][INFO]: Done waiting for pending navigations. Status: ok
+[9.712][INFO]: Waiting for pending navigations...
+[9.712][INFO]: Done waiting for pending navigations. Status: ok
+[9.712][INFO]: RESPONSE GetElementAttribute ""
+[9.714][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-48",
+   "name": "textContent"
+}
+[9.714][INFO]: Waiting for pending navigations...
+[9.715][INFO]: Done waiting for pending navigations. Status: ok
+[9.718][INFO]: Waiting for pending navigations...
+[9.718][INFO]: Done waiting for pending navigations. Status: ok
+[9.719][INFO]: RESPONSE GetElementAttribute ""
+[9.720][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-49",
+   "name": "textContent"
+}
+[9.720][INFO]: Waiting for pending navigations...
+[9.721][INFO]: Done waiting for pending navigations. Status: ok
+[9.724][INFO]: Waiting for pending navigations...
+[9.725][INFO]: Done waiting for pending navigations. Status: ok
+[9.725][INFO]: RESPONSE GetElementAttribute ""
+[9.726][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-50",
+   "name": "textContent"
+}
+[9.726][INFO]: Waiting for pending navigations...
+[9.727][INFO]: Done waiting for pending navigations. Status: ok
+[9.730][INFO]: Waiting for pending navigations...
+[9.731][INFO]: Done waiting for pending navigations. Status: ok
+[9.731][INFO]: RESPONSE GetElementAttribute ""
+[9.733][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-51",
+   "name": "textContent"
+}
+[9.733][INFO]: Waiting for pending navigations...
+[9.733][INFO]: Done waiting for pending navigations. Status: ok
+[9.737][INFO]: Waiting for pending navigations...
+[9.737][INFO]: Done waiting for pending navigations. Status: ok
+[9.737][INFO]: RESPONSE GetElementAttribute ""
+[9.739][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-52",
+   "name": "textContent"
+}
+[9.739][INFO]: Waiting for pending navigations...
+[9.739][INFO]: Done waiting for pending navigations. Status: ok
+[9.743][INFO]: Waiting for pending navigations...
+[9.743][INFO]: Done waiting for pending navigations. Status: ok
+[9.743][INFO]: RESPONSE GetElementAttribute ""
+[9.745][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-53",
+   "name": "textContent"
+}
+[9.745][INFO]: Waiting for pending navigations...
+[9.746][INFO]: Done waiting for pending navigations. Status: ok
+[9.749][INFO]: Waiting for pending navigations...
+[9.750][INFO]: Done waiting for pending navigations. Status: ok
+[9.750][INFO]: RESPONSE GetElementAttribute ""
+[9.751][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-54",
+   "name": "textContent"
+}
+[9.751][INFO]: Waiting for pending navigations...
+[9.752][INFO]: Done waiting for pending navigations. Status: ok
+[9.755][INFO]: Waiting for pending navigations...
+[9.756][INFO]: Done waiting for pending navigations. Status: ok
+[9.756][INFO]: RESPONSE GetElementAttribute ""
+[9.757][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-55",
+   "name": "textContent"
+}
+[9.757][INFO]: Waiting for pending navigations...
+[9.758][INFO]: Done waiting for pending navigations. Status: ok
+[9.761][INFO]: Waiting for pending navigations...
+[9.763][INFO]: Done waiting for pending navigations. Status: ok
+[9.763][INFO]: RESPONSE GetElementAttribute ""
+[9.764][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-56",
+   "name": "textContent"
+}
+[9.764][INFO]: Waiting for pending navigations...
+[9.765][INFO]: Done waiting for pending navigations. Status: ok
+[9.769][INFO]: Waiting for pending navigations...
+[9.770][INFO]: Done waiting for pending navigations. Status: ok
+[9.770][INFO]: RESPONSE GetElementAttribute ""
+[9.771][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-57",
+   "name": "textContent"
+}
+[9.771][INFO]: Waiting for pending navigations...
+[9.772][INFO]: Done waiting for pending navigations. Status: ok
+[9.776][INFO]: Waiting for pending navigations...
+[9.776][INFO]: Done waiting for pending navigations. Status: ok
+[9.776][INFO]: RESPONSE GetElementAttribute ""
+[9.778][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-58",
+   "name": "textContent"
+}
+[9.778][INFO]: Waiting for pending navigations...
+[9.779][INFO]: Done waiting for pending navigations. Status: ok
+[9.782][INFO]: Waiting for pending navigations...
+[9.783][INFO]: Done waiting for pending navigations. Status: ok
+[9.783][INFO]: RESPONSE GetElementAttribute ""
+[9.785][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-59",
+   "name": "textContent"
+}
+[9.785][INFO]: Waiting for pending navigations...
+[9.785][INFO]: Done waiting for pending navigations. Status: ok
+[9.789][INFO]: Waiting for pending navigations...
+[9.789][INFO]: Done waiting for pending navigations. Status: ok
+[9.789][INFO]: RESPONSE GetElementAttribute ""
+[9.791][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-60",
+   "name": "textContent"
+}
+[9.791][INFO]: Waiting for pending navigations...
+[9.791][INFO]: Done waiting for pending navigations. Status: ok
+[9.795][INFO]: Waiting for pending navigations...
+[9.795][INFO]: Done waiting for pending navigations. Status: ok
+[9.795][INFO]: RESPONSE GetElementAttribute ""
+[9.797][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-61",
+   "name": "textContent"
+}
+[9.797][INFO]: Waiting for pending navigations...
+[9.798][INFO]: Done waiting for pending navigations. Status: ok
+[9.802][INFO]: Waiting for pending navigations...
+[9.802][INFO]: Done waiting for pending navigations. Status: ok
+[9.802][INFO]: RESPONSE GetElementAttribute ""
+[9.804][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-62",
+   "name": "textContent"
+}
+[9.804][INFO]: Waiting for pending navigations...
+[9.805][INFO]: Done waiting for pending navigations. Status: ok
+[9.808][INFO]: Waiting for pending navigations...
+[9.808][INFO]: Done waiting for pending navigations. Status: ok
+[9.809][INFO]: RESPONSE GetElementAttribute ""
+[9.810][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-63",
+   "name": "textContent"
+}
+[9.810][INFO]: Waiting for pending navigations...
+[9.811][INFO]: Done waiting for pending navigations. Status: ok
+[9.814][INFO]: Waiting for pending navigations...
+[9.815][INFO]: Done waiting for pending navigations. Status: ok
+[9.815][INFO]: RESPONSE GetElementAttribute ""
+[9.816][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-64",
+   "name": "textContent"
+}
+[9.816][INFO]: Waiting for pending navigations...
+[9.817][INFO]: Done waiting for pending navigations. Status: ok
+[9.820][INFO]: Waiting for pending navigations...
+[9.821][INFO]: Done waiting for pending navigations. Status: ok
+[9.821][INFO]: RESPONSE GetElementAttribute ""
+[9.823][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-65",
+   "name": "textContent"
+}
+[9.823][INFO]: Waiting for pending navigations...
+[9.823][INFO]: Done waiting for pending navigations. Status: ok
+[9.827][INFO]: Waiting for pending navigations...
+[9.827][INFO]: Done waiting for pending navigations. Status: ok
+[9.827][INFO]: RESPONSE GetElementAttribute ""
+[9.829][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-66",
+   "name": "textContent"
+}
+[9.829][INFO]: Waiting for pending navigations...
+[9.830][INFO]: Done waiting for pending navigations. Status: ok
+[9.833][INFO]: Waiting for pending navigations...
+[9.834][INFO]: Done waiting for pending navigations. Status: ok
+[9.834][INFO]: RESPONSE GetElementAttribute ""
+[9.835][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-67",
+   "name": "textContent"
+}
+[9.835][INFO]: Waiting for pending navigations...
+[9.836][INFO]: Done waiting for pending navigations. Status: ok
+[9.839][INFO]: Waiting for pending navigations...
+[9.840][INFO]: Done waiting for pending navigations. Status: ok
+[9.840][INFO]: RESPONSE GetElementAttribute ""
+[9.842][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-68",
+   "name": "textContent"
+}
+[9.842][INFO]: Waiting for pending navigations...
+[9.842][INFO]: Done waiting for pending navigations. Status: ok
+[9.846][INFO]: Waiting for pending navigations...
+[9.847][INFO]: Done waiting for pending navigations. Status: ok
+[9.847][INFO]: RESPONSE GetElementAttribute ""
+[9.848][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-69",
+   "name": "textContent"
+}
+[9.848][INFO]: Waiting for pending navigations...
+[9.849][INFO]: Done waiting for pending navigations. Status: ok
+[9.852][INFO]: Waiting for pending navigations...
+[9.853][INFO]: Done waiting for pending navigations. Status: ok
+[9.853][INFO]: RESPONSE GetElementAttribute ""
+[9.854][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-70",
+   "name": "textContent"
+}
+[9.855][INFO]: Waiting for pending navigations...
+[9.855][INFO]: Done waiting for pending navigations. Status: ok
+[9.858][INFO]: Waiting for pending navigations...
+[9.859][INFO]: Done waiting for pending navigations. Status: ok
+[9.859][INFO]: RESPONSE GetElementAttribute ""
+[9.860][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-71",
+   "name": "textContent"
+}
+[9.860][INFO]: Waiting for pending navigations...
+[9.861][INFO]: Done waiting for pending navigations. Status: ok
+[9.864][INFO]: Waiting for pending navigations...
+[9.865][INFO]: Done waiting for pending navigations. Status: ok
+[9.865][INFO]: RESPONSE GetElementAttribute ""
+[9.866][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-72",
+   "name": "textContent"
+}
+[9.867][INFO]: Waiting for pending navigations...
+[9.867][INFO]: Done waiting for pending navigations. Status: ok
+[9.871][INFO]: Waiting for pending navigations...
+[9.871][INFO]: Done waiting for pending navigations. Status: ok
+[9.871][INFO]: RESPONSE GetElementAttribute ""
+[9.873][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-73",
+   "name": "textContent"
+}
+[9.873][INFO]: Waiting for pending navigations...
+[9.873][INFO]: Done waiting for pending navigations. Status: ok
+[9.877][INFO]: Waiting for pending navigations...
+[9.877][INFO]: Done waiting for pending navigations. Status: ok
+[9.877][INFO]: RESPONSE GetElementAttribute ""
+[9.879][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-74",
+   "name": "textContent"
+}
+[9.879][INFO]: Waiting for pending navigations...
+[9.879][INFO]: Done waiting for pending navigations. Status: ok
+[9.883][INFO]: Waiting for pending navigations...
+[9.883][INFO]: Done waiting for pending navigations. Status: ok
+[9.883][INFO]: RESPONSE GetElementAttribute ""
+[9.885][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-75",
+   "name": "textContent"
+}
+[9.885][INFO]: Waiting for pending navigations...
+[9.885][INFO]: Done waiting for pending navigations. Status: ok
+[9.889][INFO]: Waiting for pending navigations...
+[9.889][INFO]: Done waiting for pending navigations. Status: ok
+[9.889][INFO]: RESPONSE GetElementAttribute ""
+[9.891][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-76",
+   "name": "textContent"
+}
+[9.891][INFO]: Waiting for pending navigations...
+[9.892][INFO]: Done waiting for pending navigations. Status: ok
+[9.895][INFO]: Waiting for pending navigations...
+[9.895][INFO]: Done waiting for pending navigations. Status: ok
+[9.895][INFO]: RESPONSE GetElementAttribute ""
+[9.897][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-77",
+   "name": "textContent"
+}
+[9.897][INFO]: Waiting for pending navigations...
+[9.898][INFO]: Done waiting for pending navigations. Status: ok
+[9.901][INFO]: Waiting for pending navigations...
+[9.902][INFO]: Done waiting for pending navigations. Status: ok
+[9.902][INFO]: RESPONSE GetElementAttribute ""
+[9.903][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-78",
+   "name": "textContent"
+}
+[9.903][INFO]: Waiting for pending navigations...
+[9.904][INFO]: Done waiting for pending navigations. Status: ok
+[9.907][INFO]: Waiting for pending navigations...
+[9.908][INFO]: Done waiting for pending navigations. Status: ok
+[9.908][INFO]: RESPONSE GetElementAttribute ""
+[9.909][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-79",
+   "name": "textContent"
+}
+[9.910][INFO]: Waiting for pending navigations...
+[9.910][INFO]: Done waiting for pending navigations. Status: ok
+[9.914][INFO]: Waiting for pending navigations...
+[9.915][INFO]: Done waiting for pending navigations. Status: ok
+[9.915][INFO]: RESPONSE GetElementAttribute ""
+[9.916][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-80",
+   "name": "textContent"
+}
+[9.917][INFO]: Waiting for pending navigations...
+[9.917][INFO]: Done waiting for pending navigations. Status: ok
+[9.921][INFO]: Waiting for pending navigations...
+[9.921][INFO]: Done waiting for pending navigations. Status: ok
+[9.921][INFO]: RESPONSE GetElementAttribute ""
+[9.923][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-81",
+   "name": "textContent"
+}
+[9.923][INFO]: Waiting for pending navigations...
+[9.923][INFO]: Done waiting for pending navigations. Status: ok
+[9.927][INFO]: Waiting for pending navigations...
+[9.927][INFO]: Done waiting for pending navigations. Status: ok
+[9.927][INFO]: RESPONSE GetElementAttribute ""
+[9.929][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-82",
+   "name": "textContent"
+}
+[9.929][INFO]: Waiting for pending navigations...
+[9.930][INFO]: Done waiting for pending navigations. Status: ok
+[9.933][INFO]: Waiting for pending navigations...
+[9.934][INFO]: Done waiting for pending navigations. Status: ok
+[9.934][INFO]: RESPONSE GetElementAttribute ""
+[9.936][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-83",
+   "name": "textContent"
+}
+[9.936][INFO]: Waiting for pending navigations...
+[9.936][INFO]: Done waiting for pending navigations. Status: ok
+[9.940][INFO]: Waiting for pending navigations...
+[9.940][INFO]: Done waiting for pending navigations. Status: ok
+[9.940][INFO]: RESPONSE GetElementAttribute ""
+[9.942][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-84",
+   "name": "textContent"
+}
+[9.942][INFO]: Waiting for pending navigations...
+[9.942][INFO]: Done waiting for pending navigations. Status: ok
+[9.946][INFO]: Waiting for pending navigations...
+[9.946][INFO]: Done waiting for pending navigations. Status: ok
+[9.946][INFO]: RESPONSE GetElementAttribute ""
+[9.948][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-85",
+   "name": "textContent"
+}
+[9.948][INFO]: Waiting for pending navigations...
+[9.949][INFO]: Done waiting for pending navigations. Status: ok
+[9.952][INFO]: Waiting for pending navigations...
+[9.953][INFO]: Done waiting for pending navigations. Status: ok
+[9.953][INFO]: RESPONSE GetElementAttribute ""
+[9.954][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-86",
+   "name": "textContent"
+}
+[9.954][INFO]: Waiting for pending navigations...
+[9.955][INFO]: Done waiting for pending navigations. Status: ok
+[9.958][INFO]: Waiting for pending navigations...
+[9.959][INFO]: Done waiting for pending navigations. Status: ok
+[9.959][INFO]: RESPONSE GetElementAttribute ""
+[9.961][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-87",
+   "name": "textContent"
+}
+[9.961][INFO]: Waiting for pending navigations...
+[9.962][INFO]: Done waiting for pending navigations. Status: ok
+[9.965][INFO]: Waiting for pending navigations...
+[9.966][INFO]: Done waiting for pending navigations. Status: ok
+[9.966][INFO]: RESPONSE GetElementAttribute ""
+[9.967][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-88",
+   "name": "textContent"
+}
+[9.967][INFO]: Waiting for pending navigations...
+[9.968][INFO]: Done waiting for pending navigations. Status: ok
+[9.972][INFO]: Waiting for pending navigations...
+[9.972][INFO]: Done waiting for pending navigations. Status: ok
+[9.972][INFO]: RESPONSE GetElementAttribute ""
+[9.974][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-89",
+   "name": "textContent"
+}
+[9.974][INFO]: Waiting for pending navigations...
+[9.975][INFO]: Done waiting for pending navigations. Status: ok
+[9.978][INFO]: Waiting for pending navigations...
+[9.979][INFO]: Done waiting for pending navigations. Status: ok
+[9.979][INFO]: RESPONSE GetElementAttribute ""
+[9.981][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-90",
+   "name": "textContent"
+}
+[9.981][INFO]: Waiting for pending navigations...
+[9.981][INFO]: Done waiting for pending navigations. Status: ok
+[9.985][INFO]: Waiting for pending navigations...
+[9.985][INFO]: Done waiting for pending navigations. Status: ok
+[9.985][INFO]: RESPONSE GetElementAttribute ""
+[9.987][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-91",
+   "name": "textContent"
+}
+[9.987][INFO]: Waiting for pending navigations...
+[9.988][INFO]: Done waiting for pending navigations. Status: ok
+[9.991][INFO]: Waiting for pending navigations...
+[9.992][INFO]: Done waiting for pending navigations. Status: ok
+[9.992][INFO]: RESPONSE GetElementAttribute ""
+[9.993][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-92",
+   "name": "textContent"
+}
+[9.993][INFO]: Waiting for pending navigations...
+[9.994][INFO]: Done waiting for pending navigations. Status: ok
+[9.998][INFO]: Waiting for pending navigations...
+[9.999][INFO]: Done waiting for pending navigations. Status: ok
+[9.999][INFO]: RESPONSE GetElementAttribute ""
+[10.000][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-93",
+   "name": "textContent"
+}
+[10.000][INFO]: Waiting for pending navigations...
+[10.001][INFO]: Done waiting for pending navigations. Status: ok
+[10.005][INFO]: Waiting for pending navigations...
+[10.005][INFO]: Done waiting for pending navigations. Status: ok
+[10.005][INFO]: RESPONSE GetElementAttribute ""
+[10.007][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-94",
+   "name": "textContent"
+}
+[10.007][INFO]: Waiting for pending navigations...
+[10.007][INFO]: Done waiting for pending navigations. Status: ok
+[10.011][INFO]: Waiting for pending navigations...
+[10.011][INFO]: Done waiting for pending navigations. Status: ok
+[10.011][INFO]: RESPONSE GetElementAttribute ""
+[10.013][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-95",
+   "name": "textContent"
+}
+[10.013][INFO]: Waiting for pending navigations...
+[10.014][INFO]: Done waiting for pending navigations. Status: ok
+[10.017][INFO]: Waiting for pending navigations...
+[10.018][INFO]: Done waiting for pending navigations. Status: ok
+[10.018][INFO]: RESPONSE GetElementAttribute ""
+[10.020][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-96",
+   "name": "textContent"
+}
+[10.020][INFO]: Waiting for pending navigations...
+[10.020][INFO]: Done waiting for pending navigations. Status: ok
+[10.024][INFO]: Waiting for pending navigations...
+[10.024][INFO]: Done waiting for pending navigations. Status: ok
+[10.024][INFO]: RESPONSE GetElementAttribute ""
+[10.026][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-97",
+   "name": "textContent"
+}
+[10.026][INFO]: Waiting for pending navigations...
+[10.027][INFO]: Done waiting for pending navigations. Status: ok
+[10.030][INFO]: Waiting for pending navigations...
+[10.031][INFO]: Done waiting for pending navigations. Status: ok
+[10.031][INFO]: RESPONSE GetElementAttribute ""
+[10.032][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-98",
+   "name": "textContent"
+}
+[10.032][INFO]: Waiting for pending navigations...
+[10.033][INFO]: Done waiting for pending navigations. Status: ok
+[10.036][INFO]: Waiting for pending navigations...
+[10.037][INFO]: Done waiting for pending navigations. Status: ok
+[10.037][INFO]: RESPONSE GetElementAttribute ""
+[10.038][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-99",
+   "name": "textContent"
+}
+[10.038][INFO]: Waiting for pending navigations...
+[10.039][INFO]: Done waiting for pending navigations. Status: ok
+[10.042][INFO]: Waiting for pending navigations...
+[10.043][INFO]: Done waiting for pending navigations. Status: ok
+[10.043][INFO]: RESPONSE GetElementAttribute ""
+[10.045][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-100",
+   "name": "textContent"
+}
+[10.045][INFO]: Waiting for pending navigations...
+[10.046][INFO]: Done waiting for pending navigations. Status: ok
+[10.049][INFO]: Waiting for pending navigations...
+[10.050][INFO]: Done waiting for pending navigations. Status: ok
+[10.050][INFO]: RESPONSE GetElementAttribute ""
+[10.051][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-101",
+   "name": "textContent"
+}
+[10.051][INFO]: Waiting for pending navigations...
+[10.052][INFO]: Done waiting for pending navigations. Status: ok
+[10.056][INFO]: Waiting for pending navigations...
+[10.056][INFO]: Done waiting for pending navigations. Status: ok
+[10.056][INFO]: RESPONSE GetElementAttribute ""
+[10.058][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-102",
+   "name": "textContent"
+}
+[10.058][INFO]: Waiting for pending navigations...
+[10.058][INFO]: Done waiting for pending navigations. Status: ok
+[10.062][INFO]: Waiting for pending navigations...
+[10.062][INFO]: Done waiting for pending navigations. Status: ok
+[10.062][INFO]: RESPONSE GetElementAttribute ""
+[10.064][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-103",
+   "name": "textContent"
+}
+[10.064][INFO]: Waiting for pending navigations...
+[10.065][INFO]: Done waiting for pending navigations. Status: ok
+[10.068][INFO]: Waiting for pending navigations...
+[10.069][INFO]: Done waiting for pending navigations. Status: ok
+[10.069][INFO]: RESPONSE GetElementAttribute ""
+[10.070][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-104",
+   "name": "textContent"
+}
+[10.070][INFO]: Waiting for pending navigations...
+[10.071][INFO]: Done waiting for pending navigations. Status: ok
+[10.074][INFO]: Waiting for pending navigations...
+[10.075][INFO]: Done waiting for pending navigations. Status: ok
+[10.075][INFO]: RESPONSE GetElementAttribute ""
+[10.076][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-105",
+   "name": "textContent"
+}
+[10.076][INFO]: Waiting for pending navigations...
+[10.077][INFO]: Done waiting for pending navigations. Status: ok
+[10.080][INFO]: Waiting for pending navigations...
+[10.081][INFO]: Done waiting for pending navigations. Status: ok
+[10.081][INFO]: RESPONSE GetElementAttribute ""
+[10.082][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-106",
+   "name": "textContent"
+}
+[10.082][INFO]: Waiting for pending navigations...
+[10.083][INFO]: Done waiting for pending navigations. Status: ok
+[10.087][INFO]: Waiting for pending navigations...
+[10.087][INFO]: Done waiting for pending navigations. Status: ok
+[10.087][INFO]: RESPONSE GetElementAttribute ""
+[10.089][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-107",
+   "name": "textContent"
+}
+[10.089][INFO]: Waiting for pending navigations...
+[10.090][INFO]: Done waiting for pending navigations. Status: ok
+[10.093][INFO]: Waiting for pending navigations...
+[10.094][INFO]: Done waiting for pending navigations. Status: ok
+[10.094][INFO]: RESPONSE GetElementAttribute ""
+[10.095][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-108",
+   "name": "textContent"
+}
+[10.096][INFO]: Waiting for pending navigations...
+[10.096][INFO]: Done waiting for pending navigations. Status: ok
+[10.100][INFO]: Waiting for pending navigations...
+[10.100][INFO]: Done waiting for pending navigations. Status: ok
+[10.100][INFO]: RESPONSE GetElementAttribute ""
+[10.102][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-109",
+   "name": "textContent"
+}
+[10.102][INFO]: Waiting for pending navigations...
+[10.102][INFO]: Done waiting for pending navigations. Status: ok
+[10.106][INFO]: Waiting for pending navigations...
+[10.106][INFO]: Done waiting for pending navigations. Status: ok
+[10.106][INFO]: RESPONSE GetElementAttribute ""
+[10.108][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-110",
+   "name": "textContent"
+}
+[10.108][INFO]: Waiting for pending navigations...
+[10.109][INFO]: Done waiting for pending navigations. Status: ok
+[10.112][INFO]: Waiting for pending navigations...
+[10.113][INFO]: Done waiting for pending navigations. Status: ok
+[10.113][INFO]: RESPONSE GetElementAttribute ""
+[10.115][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-111",
+   "name": "textContent"
+}
+[10.115][INFO]: Waiting for pending navigations...
+[10.115][INFO]: Done waiting for pending navigations. Status: ok
+[10.119][INFO]: Waiting for pending navigations...
+[10.120][INFO]: Done waiting for pending navigations. Status: ok
+[10.120][INFO]: RESPONSE GetElementAttribute ""
+[10.121][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-112",
+   "name": "textContent"
+}
+[10.121][INFO]: Waiting for pending navigations...
+[10.122][INFO]: Done waiting for pending navigations. Status: ok
+[10.125][INFO]: Waiting for pending navigations...
+[10.126][INFO]: Done waiting for pending navigations. Status: ok
+[10.126][INFO]: RESPONSE GetElementAttribute ""
+[10.127][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-113",
+   "name": "textContent"
+}
+[10.128][INFO]: Waiting for pending navigations...
+[10.128][INFO]: Done waiting for pending navigations. Status: ok
+[10.132][INFO]: Waiting for pending navigations...
+[10.132][INFO]: Done waiting for pending navigations. Status: ok
+[10.132][INFO]: RESPONSE GetElementAttribute ""
+[10.134][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-114",
+   "name": "textContent"
+}
+[10.134][INFO]: Waiting for pending navigations...
+[10.135][INFO]: Done waiting for pending navigations. Status: ok
+[10.138][INFO]: Waiting for pending navigations...
+[10.139][INFO]: Done waiting for pending navigations. Status: ok
+[10.139][INFO]: RESPONSE GetElementAttribute ""
+[10.141][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-115",
+   "name": "textContent"
+}
+[10.141][INFO]: Waiting for pending navigations...
+[10.141][INFO]: Done waiting for pending navigations. Status: ok
+[10.145][INFO]: Waiting for pending navigations...
+[10.146][INFO]: Done waiting for pending navigations. Status: ok
+[10.146][INFO]: RESPONSE GetElementAttribute ""
+[10.148][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-116",
+   "name": "textContent"
+}
+[10.148][INFO]: Waiting for pending navigations...
+[10.148][INFO]: Done waiting for pending navigations. Status: ok
+[10.152][INFO]: Waiting for pending navigations...
+[10.153][INFO]: Done waiting for pending navigations. Status: ok
+[10.153][INFO]: RESPONSE GetElementAttribute ""
+[10.154][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-117",
+   "name": "textContent"
+}
+[10.154][INFO]: Waiting for pending navigations...
+[10.155][INFO]: Done waiting for pending navigations. Status: ok
+[10.158][INFO]: Waiting for pending navigations...
+[10.159][INFO]: Done waiting for pending navigations. Status: ok
+[10.159][INFO]: RESPONSE GetElementAttribute ""
+[10.160][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-118",
+   "name": "textContent"
+}
+[10.161][INFO]: Waiting for pending navigations...
+[10.161][INFO]: Done waiting for pending navigations. Status: ok
+[10.165][INFO]: Waiting for pending navigations...
+[10.165][INFO]: Done waiting for pending navigations. Status: ok
+[10.165][INFO]: RESPONSE GetElementAttribute ""
+[10.167][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-119",
+   "name": "textContent"
+}
+[10.167][INFO]: Waiting for pending navigations...
+[10.167][INFO]: Done waiting for pending navigations. Status: ok
+[10.170][INFO]: Waiting for pending navigations...
+[10.171][INFO]: Done waiting for pending navigations. Status: ok
+[10.171][INFO]: RESPONSE GetElementAttribute ""
+[10.173][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-120",
+   "name": "textContent"
+}
+[10.173][INFO]: Waiting for pending navigations...
+[10.173][INFO]: Done waiting for pending navigations. Status: ok
+[10.176][INFO]: Waiting for pending navigations...
+[10.177][INFO]: Done waiting for pending navigations. Status: ok
+[10.177][INFO]: RESPONSE GetElementAttribute ""
+[10.178][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-121",
+   "name": "textContent"
+}
+[10.179][INFO]: Waiting for pending navigations...
+[10.179][INFO]: Done waiting for pending navigations. Status: ok
+[10.183][INFO]: Waiting for pending navigations...
+[10.184][INFO]: Done waiting for pending navigations. Status: ok
+[10.184][INFO]: RESPONSE GetElementAttribute ""
+[10.185][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-122",
+   "name": "textContent"
+}
+[10.185][INFO]: Waiting for pending navigations...
+[10.186][INFO]: Done waiting for pending navigations. Status: ok
+[10.189][INFO]: Waiting for pending navigations...
+[10.190][INFO]: Done waiting for pending navigations. Status: ok
+[10.190][INFO]: RESPONSE GetElementAttribute ""
+[10.191][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-123",
+   "name": "textContent"
+}
+[10.191][INFO]: Waiting for pending navigations...
+[10.192][INFO]: Done waiting for pending navigations. Status: ok
+[10.195][INFO]: Waiting for pending navigations...
+[10.197][INFO]: Done waiting for pending navigations. Status: ok
+[10.197][INFO]: RESPONSE GetElementAttribute ""
+[10.198][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-124",
+   "name": "textContent"
+}
+[10.198][INFO]: Waiting for pending navigations...
+[10.199][INFO]: Done waiting for pending navigations. Status: ok
+[10.202][INFO]: Waiting for pending navigations...
+[10.203][INFO]: Done waiting for pending navigations. Status: ok
+[10.203][INFO]: RESPONSE GetElementAttribute ""
+[10.204][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-125",
+   "name": "textContent"
+}
+[10.204][INFO]: Waiting for pending navigations...
+[10.205][INFO]: Done waiting for pending navigations. Status: ok
+[10.208][INFO]: Waiting for pending navigations...
+[10.209][INFO]: Done waiting for pending navigations. Status: ok
+[10.209][INFO]: RESPONSE GetElementAttribute ""
+[10.211][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-126",
+   "name": "textContent"
+}
+[10.211][INFO]: Waiting for pending navigations...
+[10.211][INFO]: Done waiting for pending navigations. Status: ok
+[10.215][INFO]: Waiting for pending navigations...
+[10.215][INFO]: Done waiting for pending navigations. Status: ok
+[10.215][INFO]: RESPONSE GetElementAttribute ""
+[10.217][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-127",
+   "name": "textContent"
+}
+[10.217][INFO]: Waiting for pending navigations...
+[10.218][INFO]: Done waiting for pending navigations. Status: ok
+[10.221][INFO]: Waiting for pending navigations...
+[10.222][INFO]: Done waiting for pending navigations. Status: ok
+[10.222][INFO]: RESPONSE GetElementAttribute ""
+[10.223][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-128",
+   "name": "textContent"
+}
+[10.223][INFO]: Waiting for pending navigations...
+[10.224][INFO]: Done waiting for pending navigations. Status: ok
+[10.227][INFO]: Waiting for pending navigations...
+[10.228][INFO]: Done waiting for pending navigations. Status: ok
+[10.228][INFO]: RESPONSE GetElementAttribute ""
+[10.230][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-129",
+   "name": "textContent"
+}
+[10.230][INFO]: Waiting for pending navigations...
+[10.230][INFO]: Done waiting for pending navigations. Status: ok
+[10.234][INFO]: Waiting for pending navigations...
+[10.235][INFO]: Done waiting for pending navigations. Status: ok
+[10.235][INFO]: RESPONSE GetElementAttribute ""
+[10.236][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-130",
+   "name": "textContent"
+}
+[10.236][INFO]: Waiting for pending navigations...
+[10.237][INFO]: Done waiting for pending navigations. Status: ok
+[10.240][INFO]: Waiting for pending navigations...
+[10.241][INFO]: Done waiting for pending navigations. Status: ok
+[10.241][INFO]: RESPONSE GetElementAttribute ""
+[10.243][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-131",
+   "name": "textContent"
+}
+[10.243][INFO]: Waiting for pending navigations...
+[10.243][INFO]: Done waiting for pending navigations. Status: ok
+[10.247][INFO]: Waiting for pending navigations...
+[10.247][INFO]: Done waiting for pending navigations. Status: ok
+[10.248][INFO]: RESPONSE GetElementAttribute ""
+[10.249][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-132",
+   "name": "textContent"
+}
+[10.249][INFO]: Waiting for pending navigations...
+[10.250][INFO]: Done waiting for pending navigations. Status: ok
+[10.253][INFO]: Waiting for pending navigations...
+[10.254][INFO]: Done waiting for pending navigations. Status: ok
+[10.254][INFO]: RESPONSE GetElementAttribute ""
+[10.255][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-133",
+   "name": "textContent"
+}
+[10.255][INFO]: Waiting for pending navigations...
+[10.256][INFO]: Done waiting for pending navigations. Status: ok
+[10.259][INFO]: Waiting for pending navigations...
+[10.260][INFO]: Done waiting for pending navigations. Status: ok
+[10.260][INFO]: RESPONSE GetElementAttribute ""
+[10.261][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-134",
+   "name": "textContent"
+}
+[10.261][INFO]: Waiting for pending navigations...
+[10.262][INFO]: Done waiting for pending navigations. Status: ok
+[10.266][INFO]: Waiting for pending navigations...
+[10.266][INFO]: Done waiting for pending navigations. Status: ok
+[10.266][INFO]: RESPONSE GetElementAttribute ""
+[10.268][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-135",
+   "name": "textContent"
+}
+[10.268][INFO]: Waiting for pending navigations...
+[10.269][INFO]: Done waiting for pending navigations. Status: ok
+[10.272][INFO]: Waiting for pending navigations...
+[10.273][INFO]: Done waiting for pending navigations. Status: ok
+[10.273][INFO]: RESPONSE GetElementAttribute ""
+[10.274][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-136",
+   "name": "textContent"
+}
+[10.275][INFO]: Waiting for pending navigations...
+[10.275][INFO]: Done waiting for pending navigations. Status: ok
+[10.280][INFO]: Waiting for pending navigations...
+[10.281][INFO]: Done waiting for pending navigations. Status: ok
+[10.281][INFO]: RESPONSE GetElementAttribute ""
+[10.283][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-137",
+   "name": "textContent"
+}
+[10.283][INFO]: Waiting for pending navigations...
+[10.284][INFO]: Done waiting for pending navigations. Status: ok
+[10.288][INFO]: Waiting for pending navigations...
+[10.288][INFO]: Done waiting for pending navigations. Status: ok
+[10.288][INFO]: RESPONSE GetElementAttribute ""
+[10.290][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-138",
+   "name": "textContent"
+}
+[10.290][INFO]: Waiting for pending navigations...
+[10.291][INFO]: Done waiting for pending navigations. Status: ok
+[10.294][INFO]: Waiting for pending navigations...
+[10.295][INFO]: Done waiting for pending navigations. Status: ok
+[10.295][INFO]: RESPONSE GetElementAttribute ""
+[10.297][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-139",
+   "name": "textContent"
+}
+[10.297][INFO]: Waiting for pending navigations...
+[10.298][INFO]: Done waiting for pending navigations. Status: ok
+[10.301][INFO]: Waiting for pending navigations...
+[10.302][INFO]: Done waiting for pending navigations. Status: ok
+[10.302][INFO]: RESPONSE GetElementAttribute ""
+[10.303][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-140",
+   "name": "textContent"
+}
+[10.303][INFO]: Waiting for pending navigations...
+[10.304][INFO]: Done waiting for pending navigations. Status: ok
+[10.307][INFO]: Waiting for pending navigations...
+[10.308][INFO]: Done waiting for pending navigations. Status: ok
+[10.308][INFO]: RESPONSE GetElementAttribute ""
+[10.310][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-141",
+   "name": "textContent"
+}
+[10.310][INFO]: Waiting for pending navigations...
+[10.310][INFO]: Done waiting for pending navigations. Status: ok
+[10.314][INFO]: Waiting for pending navigations...
+[10.314][INFO]: Done waiting for pending navigations. Status: ok
+[10.314][INFO]: RESPONSE GetElementAttribute ""
+[10.316][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-142",
+   "name": "textContent"
+}
+[10.316][INFO]: Waiting for pending navigations...
+[10.317][INFO]: Done waiting for pending navigations. Status: ok
+[10.320][INFO]: Waiting for pending navigations...
+[10.321][INFO]: Done waiting for pending navigations. Status: ok
+[10.321][INFO]: RESPONSE GetElementAttribute ""
+[10.322][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-143",
+   "name": "textContent"
+}
+[10.322][INFO]: Waiting for pending navigations...
+[10.323][INFO]: Done waiting for pending navigations. Status: ok
+[10.326][INFO]: Waiting for pending navigations...
+[10.327][INFO]: Done waiting for pending navigations. Status: ok
+[10.327][INFO]: RESPONSE GetElementAttribute ""
+[10.328][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-144",
+   "name": "textContent"
+}
+[10.328][INFO]: Waiting for pending navigations...
+[10.329][INFO]: Done waiting for pending navigations. Status: ok
+[10.332][INFO]: Waiting for pending navigations...
+[10.333][INFO]: Done waiting for pending navigations. Status: ok
+[10.333][INFO]: RESPONSE GetElementAttribute ""
+[10.335][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-145",
+   "name": "textContent"
+}
+[10.335][INFO]: Waiting for pending navigations...
+[10.335][INFO]: Done waiting for pending navigations. Status: ok
+[10.339][INFO]: Waiting for pending navigations...
+[10.339][INFO]: Done waiting for pending navigations. Status: ok
+[10.339][INFO]: RESPONSE GetElementAttribute ""
+[10.341][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-146",
+   "name": "textContent"
+}
+[10.341][INFO]: Waiting for pending navigations...
+[10.342][INFO]: Done waiting for pending navigations. Status: ok
+[10.345][INFO]: Waiting for pending navigations...
+[10.346][INFO]: Done waiting for pending navigations. Status: ok
+[10.346][INFO]: RESPONSE GetElementAttribute ""
+[10.348][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-147",
+   "name": "textContent"
+}
+[10.348][INFO]: Waiting for pending navigations...
+[10.348][INFO]: Done waiting for pending navigations. Status: ok
+[10.352][INFO]: Waiting for pending navigations...
+[10.353][INFO]: Done waiting for pending navigations. Status: ok
+[10.353][INFO]: RESPONSE GetElementAttribute ""
+[10.355][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-148",
+   "name": "textContent"
+}
+[10.355][INFO]: Waiting for pending navigations...
+[10.356][INFO]: Done waiting for pending navigations. Status: ok
+[10.359][INFO]: Waiting for pending navigations...
+[10.360][INFO]: Done waiting for pending navigations. Status: ok
+[10.360][INFO]: RESPONSE GetElementAttribute ""
+[10.361][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-149",
+   "name": "textContent"
+}
+[10.361][INFO]: Waiting for pending navigations...
+[10.362][INFO]: Done waiting for pending navigations. Status: ok
+[10.366][INFO]: Waiting for pending navigations...
+[10.366][INFO]: Done waiting for pending navigations. Status: ok
+[10.366][INFO]: RESPONSE GetElementAttribute ""
+[10.368][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-150",
+   "name": "textContent"
+}
+[10.368][INFO]: Waiting for pending navigations...
+[10.369][INFO]: Done waiting for pending navigations. Status: ok
+[10.372][INFO]: Waiting for pending navigations...
+[10.373][INFO]: Done waiting for pending navigations. Status: ok
+[10.373][INFO]: RESPONSE GetElementAttribute ""
+[10.374][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-151",
+   "name": "textContent"
+}
+[10.374][INFO]: Waiting for pending navigations...
+[10.375][INFO]: Done waiting for pending navigations. Status: ok
+[10.378][INFO]: Waiting for pending navigations...
+[10.379][INFO]: Done waiting for pending navigations. Status: ok
+[10.379][INFO]: RESPONSE GetElementAttribute ""
+[10.381][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-152",
+   "name": "textContent"
+}
+[10.381][INFO]: Waiting for pending navigations...
+[10.381][INFO]: Done waiting for pending navigations. Status: ok
+[10.385][INFO]: Waiting for pending navigations...
+[10.386][INFO]: Done waiting for pending navigations. Status: ok
+[10.386][INFO]: RESPONSE GetElementAttribute ""
+[10.387][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-153",
+   "name": "textContent"
+}
+[10.387][INFO]: Waiting for pending navigations...
+[10.388][INFO]: Done waiting for pending navigations. Status: ok
+[10.391][INFO]: Waiting for pending navigations...
+[10.392][INFO]: Done waiting for pending navigations. Status: ok
+[10.392][INFO]: RESPONSE GetElementAttribute ""
+[10.394][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-154",
+   "name": "textContent"
+}
+[10.394][INFO]: Waiting for pending navigations...
+[10.394][INFO]: Done waiting for pending navigations. Status: ok
+[10.398][INFO]: Waiting for pending navigations...
+[10.399][INFO]: Done waiting for pending navigations. Status: ok
+[10.399][INFO]: RESPONSE GetElementAttribute ""
+[10.400][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-155",
+   "name": "textContent"
+}
+[10.400][INFO]: Waiting for pending navigations...
+[10.401][INFO]: Done waiting for pending navigations. Status: ok
+[10.404][INFO]: Waiting for pending navigations...
+[10.405][INFO]: Done waiting for pending navigations. Status: ok
+[10.405][INFO]: RESPONSE GetElementAttribute ""
+[10.407][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-156",
+   "name": "textContent"
+}
+[10.407][INFO]: Waiting for pending navigations...
+[10.408][INFO]: Done waiting for pending navigations. Status: ok
+[10.411][INFO]: Waiting for pending navigations...
+[10.412][INFO]: Done waiting for pending navigations. Status: ok
+[10.412][INFO]: RESPONSE GetElementAttribute ""
+[10.414][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-157",
+   "name": "textContent"
+}
+[10.414][INFO]: Waiting for pending navigations...
+[10.415][INFO]: Done waiting for pending navigations. Status: ok
+[10.419][INFO]: Waiting for pending navigations...
+[10.419][INFO]: Done waiting for pending navigations. Status: ok
+[10.419][INFO]: RESPONSE GetElementAttribute ""
+[10.421][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-158",
+   "name": "textContent"
+}
+[10.421][INFO]: Waiting for pending navigations...
+[10.422][INFO]: Done waiting for pending navigations. Status: ok
+[10.426][INFO]: Waiting for pending navigations...
+[10.426][INFO]: Done waiting for pending navigations. Status: ok
+[10.426][INFO]: RESPONSE GetElementAttribute ""
+[10.428][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-159",
+   "name": "textContent"
+}
+[10.428][INFO]: Waiting for pending navigations...
+[10.429][INFO]: Done waiting for pending navigations. Status: ok
+[10.433][INFO]: Waiting for pending navigations...
+[10.433][INFO]: Done waiting for pending navigations. Status: ok
+[10.433][INFO]: RESPONSE GetElementAttribute ""
+[10.435][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-160",
+   "name": "textContent"
+}
+[10.435][INFO]: Waiting for pending navigations...
+[10.436][INFO]: Done waiting for pending navigations. Status: ok
+[10.439][INFO]: Waiting for pending navigations...
+[10.440][INFO]: Done waiting for pending navigations. Status: ok
+[10.440][INFO]: RESPONSE GetElementAttribute ""
+[10.442][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-161",
+   "name": "textContent"
+}
+[10.442][INFO]: Waiting for pending navigations...
+[10.442][INFO]: Done waiting for pending navigations. Status: ok
+[10.446][INFO]: Waiting for pending navigations...
+[10.446][INFO]: Done waiting for pending navigations. Status: ok
+[10.446][INFO]: RESPONSE GetElementAttribute ""
+[10.448][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-162",
+   "name": "textContent"
+}
+[10.448][INFO]: Waiting for pending navigations...
+[10.449][INFO]: Done waiting for pending navigations. Status: ok
+[10.452][INFO]: Waiting for pending navigations...
+[10.453][INFO]: Done waiting for pending navigations. Status: ok
+[10.453][INFO]: RESPONSE GetElementAttribute ""
+[10.454][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-163",
+   "name": "textContent"
+}
+[10.454][INFO]: Waiting for pending navigations...
+[10.455][INFO]: Done waiting for pending navigations. Status: ok
+[10.459][INFO]: Waiting for pending navigations...
+[10.459][INFO]: Done waiting for pending navigations. Status: ok
+[10.459][INFO]: RESPONSE GetElementAttribute ""
+[10.461][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-164",
+   "name": "textContent"
+}
+[10.461][INFO]: Waiting for pending navigations...
+[10.461][INFO]: Done waiting for pending navigations. Status: ok
+[10.465][INFO]: Waiting for pending navigations...
+[10.466][INFO]: Done waiting for pending navigations. Status: ok
+[10.466][INFO]: RESPONSE GetElementAttribute ""
+[10.468][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-165",
+   "name": "textContent"
+}
+[10.468][INFO]: Waiting for pending navigations...
+[10.468][INFO]: Done waiting for pending navigations. Status: ok
+[10.472][INFO]: Waiting for pending navigations...
+[10.472][INFO]: Done waiting for pending navigations. Status: ok
+[10.472][INFO]: RESPONSE GetElementAttribute ""
+[10.474][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-166",
+   "name": "textContent"
+}
+[10.474][INFO]: Waiting for pending navigations...
+[10.475][INFO]: Done waiting for pending navigations. Status: ok
+[10.478][INFO]: Waiting for pending navigations...
+[10.479][INFO]: Done waiting for pending navigations. Status: ok
+[10.479][INFO]: RESPONSE GetElementAttribute ""
+[10.480][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-167",
+   "name": "textContent"
+}
+[10.480][INFO]: Waiting for pending navigations...
+[10.481][INFO]: Done waiting for pending navigations. Status: ok
+[10.484][INFO]: Waiting for pending navigations...
+[10.485][INFO]: Done waiting for pending navigations. Status: ok
+[10.485][INFO]: RESPONSE GetElementAttribute ""
+[10.487][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-168",
+   "name": "textContent"
+}
+[10.487][INFO]: Waiting for pending navigations...
+[10.487][INFO]: Done waiting for pending navigations. Status: ok
+[10.491][INFO]: Waiting for pending navigations...
+[10.491][INFO]: Done waiting for pending navigations. Status: ok
+[10.491][INFO]: RESPONSE GetElementAttribute ""
+[10.493][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-169",
+   "name": "textContent"
+}
+[10.493][INFO]: Waiting for pending navigations...
+[10.494][INFO]: Done waiting for pending navigations. Status: ok
+[10.497][INFO]: Waiting for pending navigations...
+[10.498][INFO]: Done waiting for pending navigations. Status: ok
+[10.498][INFO]: RESPONSE GetElementAttribute ""
+[10.500][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-170",
+   "name": "textContent"
+}
+[10.500][INFO]: Waiting for pending navigations...
+[10.500][INFO]: Done waiting for pending navigations. Status: ok
+[10.504][INFO]: Waiting for pending navigations...
+[10.504][INFO]: Done waiting for pending navigations. Status: ok
+[10.504][INFO]: RESPONSE GetElementAttribute ""
+[10.506][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-171",
+   "name": "textContent"
+}
+[10.506][INFO]: Waiting for pending navigations...
+[10.507][INFO]: Done waiting for pending navigations. Status: ok
+[10.510][INFO]: Waiting for pending navigations...
+[10.511][INFO]: Done waiting for pending navigations. Status: ok
+[10.511][INFO]: RESPONSE GetElementAttribute ""
+[10.512][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-172",
+   "name": "textContent"
+}
+[10.512][INFO]: Waiting for pending navigations...
+[10.513][INFO]: Done waiting for pending navigations. Status: ok
+[10.516][INFO]: Waiting for pending navigations...
+[10.517][INFO]: Done waiting for pending navigations. Status: ok
+[10.517][INFO]: RESPONSE GetElementAttribute ""
+[10.519][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-173",
+   "name": "textContent"
+}
+[10.519][INFO]: Waiting for pending navigations...
+[10.519][INFO]: Done waiting for pending navigations. Status: ok
+[10.523][INFO]: Waiting for pending navigations...
+[10.523][INFO]: Done waiting for pending navigations. Status: ok
+[10.523][INFO]: RESPONSE GetElementAttribute ""
+[10.525][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-174",
+   "name": "textContent"
+}
+[10.525][INFO]: Waiting for pending navigations...
+[10.526][INFO]: Done waiting for pending navigations. Status: ok
+[10.529][INFO]: Waiting for pending navigations...
+[10.530][INFO]: Done waiting for pending navigations. Status: ok
+[10.530][INFO]: RESPONSE GetElementAttribute ""
+[10.531][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-175",
+   "name": "textContent"
+}
+[10.531][INFO]: Waiting for pending navigations...
+[10.532][INFO]: Done waiting for pending navigations. Status: ok
+[10.536][INFO]: Waiting for pending navigations...
+[10.537][INFO]: Done waiting for pending navigations. Status: ok
+[10.537][INFO]: RESPONSE GetElementAttribute ""
+[10.538][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-176",
+   "name": "textContent"
+}
+[10.538][INFO]: Waiting for pending navigations...
+[10.539][INFO]: Done waiting for pending navigations. Status: ok
+[10.542][INFO]: Waiting for pending navigations...
+[10.543][INFO]: Done waiting for pending navigations. Status: ok
+[10.543][INFO]: RESPONSE GetElementAttribute ""
+[10.545][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-177",
+   "name": "textContent"
+}
+[10.545][INFO]: Waiting for pending navigations...
+[10.546][INFO]: Done waiting for pending navigations. Status: ok
+[10.549][INFO]: Waiting for pending navigations...
+[10.550][INFO]: Done waiting for pending navigations. Status: ok
+[10.550][INFO]: RESPONSE GetElementAttribute ""
+[10.551][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-178",
+   "name": "textContent"
+}
+[10.551][INFO]: Waiting for pending navigations...
+[10.552][INFO]: Done waiting for pending navigations. Status: ok
+[10.555][INFO]: Waiting for pending navigations...
+[10.556][INFO]: Done waiting for pending navigations. Status: ok
+[10.556][INFO]: RESPONSE GetElementAttribute ""
+[10.558][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-179",
+   "name": "textContent"
+}
+[10.558][INFO]: Waiting for pending navigations...
+[10.558][INFO]: Done waiting for pending navigations. Status: ok
+[10.562][INFO]: Waiting for pending navigations...
+[10.563][INFO]: Done waiting for pending navigations. Status: ok
+[10.563][INFO]: RESPONSE GetElementAttribute ""
+[10.564][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-180",
+   "name": "textContent"
+}
+[10.564][INFO]: Waiting for pending navigations...
+[10.565][INFO]: Done waiting for pending navigations. Status: ok
+[10.569][INFO]: Waiting for pending navigations...
+[10.569][INFO]: Done waiting for pending navigations. Status: ok
+[10.569][INFO]: RESPONSE GetElementAttribute ""
+[10.571][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-181",
+   "name": "textContent"
+}
+[10.571][INFO]: Waiting for pending navigations...
+[10.572][INFO]: Done waiting for pending navigations. Status: ok
+[10.575][INFO]: Waiting for pending navigations...
+[10.576][INFO]: Done waiting for pending navigations. Status: ok
+[10.576][INFO]: RESPONSE GetElementAttribute ""
+[10.578][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-182",
+   "name": "textContent"
+}
+[10.578][INFO]: Waiting for pending navigations...
+[10.578][INFO]: Done waiting for pending navigations. Status: ok
+[10.582][INFO]: Waiting for pending navigations...
+[10.583][INFO]: Done waiting for pending navigations. Status: ok
+[10.583][INFO]: RESPONSE GetElementAttribute ""
+[10.584][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-183",
+   "name": "textContent"
+}
+[10.584][INFO]: Waiting for pending navigations...
+[10.585][INFO]: Done waiting for pending navigations. Status: ok
+[10.588][INFO]: Waiting for pending navigations...
+[10.589][INFO]: Done waiting for pending navigations. Status: ok
+[10.589][INFO]: RESPONSE GetElementAttribute ""
+[10.591][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-184",
+   "name": "textContent"
+}
+[10.591][INFO]: Waiting for pending navigations...
+[10.591][INFO]: Done waiting for pending navigations. Status: ok
+[10.595][INFO]: Waiting for pending navigations...
+[10.595][INFO]: Done waiting for pending navigations. Status: ok
+[10.595][INFO]: RESPONSE GetElementAttribute ""
+[10.597][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-185",
+   "name": "textContent"
+}
+[10.597][INFO]: Waiting for pending navigations...
+[10.598][INFO]: Done waiting for pending navigations. Status: ok
+[10.601][INFO]: Waiting for pending navigations...
+[10.602][INFO]: Done waiting for pending navigations. Status: ok
+[10.602][INFO]: RESPONSE GetElementAttribute ""
+[10.603][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-186",
+   "name": "textContent"
+}
+[10.603][INFO]: Waiting for pending navigations...
+[10.604][INFO]: Done waiting for pending navigations. Status: ok
+[10.607][INFO]: Waiting for pending navigations...
+[10.608][INFO]: Done waiting for pending navigations. Status: ok
+[10.608][INFO]: RESPONSE GetElementAttribute ""
+[10.609][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-187",
+   "name": "textContent"
+}
+[10.609][INFO]: Waiting for pending navigations...
+[10.610][INFO]: Done waiting for pending navigations. Status: ok
+[10.614][INFO]: Waiting for pending navigations...
+[10.614][INFO]: Done waiting for pending navigations. Status: ok
+[10.614][INFO]: RESPONSE GetElementAttribute ""
+[10.616][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-188",
+   "name": "textContent"
+}
+[10.616][INFO]: Waiting for pending navigations...
+[10.616][INFO]: Done waiting for pending navigations. Status: ok
+[10.620][INFO]: Waiting for pending navigations...
+[10.621][INFO]: Done waiting for pending navigations. Status: ok
+[10.621][INFO]: RESPONSE GetElementAttribute ""
+[10.622][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-189",
+   "name": "textContent"
+}
+[10.622][INFO]: Waiting for pending navigations...
+[10.623][INFO]: Done waiting for pending navigations. Status: ok
+[10.626][INFO]: Waiting for pending navigations...
+[10.627][INFO]: Done waiting for pending navigations. Status: ok
+[10.627][INFO]: RESPONSE GetElementAttribute ""
+[10.629][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-190",
+   "name": "textContent"
+}
+[10.629][INFO]: Waiting for pending navigations...
+[10.629][INFO]: Done waiting for pending navigations. Status: ok
+[10.633][INFO]: Waiting for pending navigations...
+[10.634][INFO]: Done waiting for pending navigations. Status: ok
+[10.634][INFO]: RESPONSE GetElementAttribute ""
+[10.635][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-191",
+   "name": "textContent"
+}
+[10.635][INFO]: Waiting for pending navigations...
+[10.636][INFO]: Done waiting for pending navigations. Status: ok
+[10.639][INFO]: Waiting for pending navigations...
+[10.640][INFO]: Done waiting for pending navigations. Status: ok
+[10.640][INFO]: RESPONSE GetElementAttribute ""
+[10.642][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-192",
+   "name": "textContent"
+}
+[10.642][INFO]: Waiting for pending navigations...
+[10.642][INFO]: Done waiting for pending navigations. Status: ok
+[10.646][INFO]: Waiting for pending navigations...
+[10.647][INFO]: Done waiting for pending navigations. Status: ok
+[10.647][INFO]: RESPONSE GetElementAttribute ""
+[10.649][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-193",
+   "name": "textContent"
+}
+[10.649][INFO]: Waiting for pending navigations...
+[10.649][INFO]: Done waiting for pending navigations. Status: ok
+[10.653][INFO]: Waiting for pending navigations...
+[10.653][INFO]: Done waiting for pending navigations. Status: ok
+[10.653][INFO]: RESPONSE GetElementAttribute ""
+[10.655][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-194",
+   "name": "textContent"
+}
+[10.655][INFO]: Waiting for pending navigations...
+[10.656][INFO]: Done waiting for pending navigations. Status: ok
+[10.659][INFO]: Waiting for pending navigations...
+[10.660][INFO]: Done waiting for pending navigations. Status: ok
+[10.660][INFO]: RESPONSE GetElementAttribute ""
+[10.661][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-195",
+   "name": "textContent"
+}
+[10.661][INFO]: Waiting for pending navigations...
+[10.662][INFO]: Done waiting for pending navigations. Status: ok
+[10.665][INFO]: Waiting for pending navigations...
+[10.666][INFO]: Done waiting for pending navigations. Status: ok
+[10.666][INFO]: RESPONSE GetElementAttribute ""
+[10.668][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-196",
+   "name": "textContent"
+}
+[10.668][INFO]: Waiting for pending navigations...
+[10.668][INFO]: Done waiting for pending navigations. Status: ok
+[10.672][INFO]: Waiting for pending navigations...
+[10.672][INFO]: Done waiting for pending navigations. Status: ok
+[10.672][INFO]: RESPONSE GetElementAttribute ""
+[10.674][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-197",
+   "name": "textContent"
+}
+[10.674][INFO]: Waiting for pending navigations...
+[10.674][INFO]: Done waiting for pending navigations. Status: ok
+[10.678][INFO]: Waiting for pending navigations...
+[10.678][INFO]: Done waiting for pending navigations. Status: ok
+[10.679][INFO]: RESPONSE GetElementAttribute ""
+[10.680][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-198",
+   "name": "textContent"
+}
+[10.680][INFO]: Waiting for pending navigations...
+[10.681][INFO]: Done waiting for pending navigations. Status: ok
+[10.685][INFO]: Waiting for pending navigations...
+[10.685][INFO]: Done waiting for pending navigations. Status: ok
+[10.686][INFO]: RESPONSE GetElementAttribute ""
+[10.687][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-199",
+   "name": "textContent"
+}
+[10.687][INFO]: Waiting for pending navigations...
+[10.688][INFO]: Done waiting for pending navigations. Status: ok
+[10.691][INFO]: Waiting for pending navigations...
+[10.692][INFO]: Done waiting for pending navigations. Status: ok
+[10.692][INFO]: RESPONSE GetElementAttribute ""
+[10.694][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-200",
+   "name": "textContent"
+}
+[10.694][INFO]: Waiting for pending navigations...
+[10.694][INFO]: Done waiting for pending navigations. Status: ok
+[10.698][INFO]: Waiting for pending navigations...
+[10.699][INFO]: Done waiting for pending navigations. Status: ok
+[10.699][INFO]: RESPONSE GetElementAttribute ""
+[10.700][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-201",
+   "name": "textContent"
+}
+[10.700][INFO]: Waiting for pending navigations...
+[10.701][INFO]: Done waiting for pending navigations. Status: ok
+[10.704][INFO]: Waiting for pending navigations...
+[10.705][INFO]: Done waiting for pending navigations. Status: ok
+[10.705][INFO]: RESPONSE GetElementAttribute ""
+[10.707][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-202",
+   "name": "textContent"
+}
+[10.707][INFO]: Waiting for pending navigations...
+[10.707][INFO]: Done waiting for pending navigations. Status: ok
+[10.711][INFO]: Waiting for pending navigations...
+[10.711][INFO]: Done waiting for pending navigations. Status: ok
+[10.711][INFO]: RESPONSE GetElementAttribute ""
+[10.713][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-203",
+   "name": "textContent"
+}
+[10.713][INFO]: Waiting for pending navigations...
+[10.714][INFO]: Done waiting for pending navigations. Status: ok
+[10.717][INFO]: Waiting for pending navigations...
+[10.718][INFO]: Done waiting for pending navigations. Status: ok
+[10.718][INFO]: RESPONSE GetElementAttribute ""
+[10.719][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-204",
+   "name": "textContent"
+}
+[10.719][INFO]: Waiting for pending navigations...
+[10.720][INFO]: Done waiting for pending navigations. Status: ok
+[10.723][INFO]: Waiting for pending navigations...
+[10.724][INFO]: Done waiting for pending navigations. Status: ok
+[10.724][INFO]: RESPONSE GetElementAttribute ""
+[10.725][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-205",
+   "name": "textContent"
+}
+[10.725][INFO]: Waiting for pending navigations...
+[10.726][INFO]: Done waiting for pending navigations. Status: ok
+[10.729][INFO]: Waiting for pending navigations...
+[10.730][INFO]: Done waiting for pending navigations. Status: ok
+[10.730][INFO]: RESPONSE GetElementAttribute ""
+[10.731][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-206",
+   "name": "textContent"
+}
+[10.731][INFO]: Waiting for pending navigations...
+[10.732][INFO]: Done waiting for pending navigations. Status: ok
+[10.735][INFO]: Waiting for pending navigations...
+[10.736][INFO]: Done waiting for pending navigations. Status: ok
+[10.736][INFO]: RESPONSE GetElementAttribute ""
+[10.737][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-207",
+   "name": "textContent"
+}
+[10.738][INFO]: Waiting for pending navigations...
+[10.738][INFO]: Done waiting for pending navigations. Status: ok
+[10.741][INFO]: Waiting for pending navigations...
+[10.742][INFO]: Done waiting for pending navigations. Status: ok
+[10.742][INFO]: RESPONSE GetElementAttribute ""
+[10.743][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-208",
+   "name": "textContent"
+}
+[10.743][INFO]: Waiting for pending navigations...
+[10.744][INFO]: Done waiting for pending navigations. Status: ok
+[10.748][INFO]: Waiting for pending navigations...
+[10.748][INFO]: Done waiting for pending navigations. Status: ok
+[10.748][INFO]: RESPONSE GetElementAttribute ""
+[10.750][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-209",
+   "name": "textContent"
+}
+[10.750][INFO]: Waiting for pending navigations...
+[10.750][INFO]: Done waiting for pending navigations. Status: ok
+[10.754][INFO]: Waiting for pending navigations...
+[10.754][INFO]: Done waiting for pending navigations. Status: ok
+[10.754][INFO]: RESPONSE GetElementAttribute ""
+[10.756][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-210",
+   "name": "textContent"
+}
+[10.756][INFO]: Waiting for pending navigations...
+[10.756][INFO]: Done waiting for pending navigations. Status: ok
+[10.760][INFO]: Waiting for pending navigations...
+[10.760][INFO]: Done waiting for pending navigations. Status: ok
+[10.760][INFO]: RESPONSE GetElementAttribute ""
+[10.762][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-211",
+   "name": "textContent"
+}
+[10.762][INFO]: Waiting for pending navigations...
+[10.762][INFO]: Done waiting for pending navigations. Status: ok
+[10.766][INFO]: Waiting for pending navigations...
+[10.766][INFO]: Done waiting for pending navigations. Status: ok
+[10.766][INFO]: RESPONSE GetElementAttribute ""
+[10.768][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-212",
+   "name": "textContent"
+}
+[10.768][INFO]: Waiting for pending navigations...
+[10.769][INFO]: Done waiting for pending navigations. Status: ok
+[10.772][INFO]: Waiting for pending navigations...
+[10.773][INFO]: Done waiting for pending navigations. Status: ok
+[10.773][INFO]: RESPONSE GetElementAttribute ""
+[10.775][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-213",
+   "name": "textContent"
+}
+[10.775][INFO]: Waiting for pending navigations...
+[10.776][INFO]: Done waiting for pending navigations. Status: ok
+[10.780][INFO]: Waiting for pending navigations...
+[10.780][INFO]: Done waiting for pending navigations. Status: ok
+[10.780][INFO]: RESPONSE GetElementAttribute ""
+[10.782][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-214",
+   "name": "textContent"
+}
+[10.782][INFO]: Waiting for pending navigations...
+[10.783][INFO]: Done waiting for pending navigations. Status: ok
+[10.786][INFO]: Waiting for pending navigations...
+[10.787][INFO]: Done waiting for pending navigations. Status: ok
+[10.787][INFO]: RESPONSE GetElementAttribute ""
+[10.788][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-215",
+   "name": "textContent"
+}
+[10.788][INFO]: Waiting for pending navigations...
+[10.789][INFO]: Done waiting for pending navigations. Status: ok
+[10.792][INFO]: Waiting for pending navigations...
+[10.793][INFO]: Done waiting for pending navigations. Status: ok
+[10.793][INFO]: RESPONSE GetElementAttribute ""
+[10.794][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-216",
+   "name": "textContent"
+}
+[10.794][INFO]: Waiting for pending navigations...
+[10.795][INFO]: Done waiting for pending navigations. Status: ok
+[10.799][INFO]: Waiting for pending navigations...
+[10.800][INFO]: Done waiting for pending navigations. Status: ok
+[10.800][INFO]: RESPONSE GetElementAttribute ""
+[10.802][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-217",
+   "name": "textContent"
+}
+[10.802][INFO]: Waiting for pending navigations...
+[10.802][INFO]: Done waiting for pending navigations. Status: ok
+[10.806][INFO]: Waiting for pending navigations...
+[10.806][INFO]: Done waiting for pending navigations. Status: ok
+[10.806][INFO]: RESPONSE GetElementAttribute ""
+[10.808][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-218",
+   "name": "textContent"
+}
+[10.808][INFO]: Waiting for pending navigations...
+[10.809][INFO]: Done waiting for pending navigations. Status: ok
+[10.814][INFO]: Waiting for pending navigations...
+[10.814][INFO]: Done waiting for pending navigations. Status: ok
+[10.815][INFO]: RESPONSE GetElementAttribute ""
+[10.816][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-219",
+   "name": "textContent"
+}
+[10.816][INFO]: Waiting for pending navigations...
+[10.817][INFO]: Done waiting for pending navigations. Status: ok
+[10.821][INFO]: Waiting for pending navigations...
+[10.821][INFO]: Done waiting for pending navigations. Status: ok
+[10.822][INFO]: RESPONSE GetElementAttribute ""
+[10.823][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-220",
+   "name": "textContent"
+}
+[10.823][INFO]: Waiting for pending navigations...
+[10.824][INFO]: Done waiting for pending navigations. Status: ok
+[10.828][INFO]: Waiting for pending navigations...
+[10.828][INFO]: Done waiting for pending navigations. Status: ok
+[10.828][INFO]: RESPONSE GetElementAttribute ""
+[10.830][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-221",
+   "name": "textContent"
+}
+[10.831][INFO]: Waiting for pending navigations...
+[10.831][INFO]: Done waiting for pending navigations. Status: ok
+[10.835][INFO]: Waiting for pending navigations...
+[10.836][INFO]: Done waiting for pending navigations. Status: ok
+[10.836][INFO]: RESPONSE GetElementAttribute ""
+[10.837][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-222",
+   "name": "textContent"
+}
+[10.837][INFO]: Waiting for pending navigations...
+[10.838][INFO]: Done waiting for pending navigations. Status: ok
+[10.842][INFO]: Waiting for pending navigations...
+[10.842][INFO]: Done waiting for pending navigations. Status: ok
+[10.842][INFO]: RESPONSE GetElementAttribute ""
+[10.844][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-223",
+   "name": "textContent"
+}
+[10.844][INFO]: Waiting for pending navigations...
+[10.845][INFO]: Done waiting for pending navigations. Status: ok
+[10.848][INFO]: Waiting for pending navigations...
+[10.849][INFO]: Done waiting for pending navigations. Status: ok
+[10.849][INFO]: RESPONSE GetElementAttribute ""
+[10.851][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-224",
+   "name": "textContent"
+}
+[10.851][INFO]: Waiting for pending navigations...
+[10.851][INFO]: Done waiting for pending navigations. Status: ok
+[10.854][INFO]: Waiting for pending navigations...
+[10.855][INFO]: Done waiting for pending navigations. Status: ok
+[10.855][INFO]: RESPONSE GetElementAttribute ""
+[10.857][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-225",
+   "name": "textContent"
+}
+[10.857][INFO]: Waiting for pending navigations...
+[10.857][INFO]: Done waiting for pending navigations. Status: ok
+[10.860][INFO]: Waiting for pending navigations...
+[10.861][INFO]: Done waiting for pending navigations. Status: ok
+[10.861][INFO]: RESPONSE GetElementAttribute ""
+[10.863][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-226",
+   "name": "textContent"
+}
+[10.863][INFO]: Waiting for pending navigations...
+[10.863][INFO]: Done waiting for pending navigations. Status: ok
+[10.867][INFO]: Waiting for pending navigations...
+[10.867][INFO]: Done waiting for pending navigations. Status: ok
+[10.867][INFO]: RESPONSE GetElementAttribute ""
+[10.869][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-227",
+   "name": "textContent"
+}
+[10.869][INFO]: Waiting for pending navigations...
+[10.870][INFO]: Done waiting for pending navigations. Status: ok
+[10.873][INFO]: Waiting for pending navigations...
+[10.874][INFO]: Done waiting for pending navigations. Status: ok
+[10.874][INFO]: RESPONSE GetElementAttribute ""
+[10.875][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-228",
+   "name": "textContent"
+}
+[10.875][INFO]: Waiting for pending navigations...
+[10.876][INFO]: Done waiting for pending navigations. Status: ok
+[10.880][INFO]: Waiting for pending navigations...
+[10.880][INFO]: Done waiting for pending navigations. Status: ok
+[10.880][INFO]: RESPONSE GetElementAttribute ""
+[10.882][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-229",
+   "name": "textContent"
+}
+[10.882][INFO]: Waiting for pending navigations...
+[10.883][INFO]: Done waiting for pending navigations. Status: ok
+[10.886][INFO]: Waiting for pending navigations...
+[10.887][INFO]: Done waiting for pending navigations. Status: ok
+[10.887][INFO]: RESPONSE GetElementAttribute ""
+[10.889][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-230",
+   "name": "textContent"
+}
+[10.889][INFO]: Waiting for pending navigations...
+[10.889][INFO]: Done waiting for pending navigations. Status: ok
+[10.893][INFO]: Waiting for pending navigations...
+[10.893][INFO]: Done waiting for pending navigations. Status: ok
+[10.893][INFO]: RESPONSE GetElementAttribute ""
+[10.895][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-231",
+   "name": "textContent"
+}
+[10.895][INFO]: Waiting for pending navigations...
+[10.895][INFO]: Done waiting for pending navigations. Status: ok
+[10.899][INFO]: Waiting for pending navigations...
+[10.899][INFO]: Done waiting for pending navigations. Status: ok
+[10.899][INFO]: RESPONSE GetElementAttribute ""
+[10.901][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-232",
+   "name": "textContent"
+}
+[10.901][INFO]: Waiting for pending navigations...
+[10.902][INFO]: Done waiting for pending navigations. Status: ok
+[10.905][INFO]: Waiting for pending navigations...
+[10.905][INFO]: Done waiting for pending navigations. Status: ok
+[10.905][INFO]: RESPONSE GetElementAttribute ""
+[10.907][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-233",
+   "name": "textContent"
+}
+[10.907][INFO]: Waiting for pending navigations...
+[10.908][INFO]: Done waiting for pending navigations. Status: ok
+[10.911][INFO]: Waiting for pending navigations...
+[10.912][INFO]: Done waiting for pending navigations. Status: ok
+[10.912][INFO]: RESPONSE GetElementAttribute ""
+[10.913][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-234",
+   "name": "textContent"
+}
+[10.913][INFO]: Waiting for pending navigations...
+[10.914][INFO]: Done waiting for pending navigations. Status: ok
+[10.917][INFO]: Waiting for pending navigations...
+[10.918][INFO]: Done waiting for pending navigations. Status: ok
+[10.918][INFO]: RESPONSE GetElementAttribute ""
+[10.919][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-235",
+   "name": "textContent"
+}
+[10.919][INFO]: Waiting for pending navigations...
+[10.920][INFO]: Done waiting for pending navigations. Status: ok
+[10.923][INFO]: Waiting for pending navigations...
+[10.924][INFO]: Done waiting for pending navigations. Status: ok
+[10.924][INFO]: RESPONSE GetElementAttribute ""
+[10.926][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-236",
+   "name": "textContent"
+}
+[10.926][INFO]: Waiting for pending navigations...
+[10.926][INFO]: Done waiting for pending navigations. Status: ok
+[10.930][INFO]: Waiting for pending navigations...
+[10.930][INFO]: Done waiting for pending navigations. Status: ok
+[10.930][INFO]: RESPONSE GetElementAttribute ""
+[10.932][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-237",
+   "name": "textContent"
+}
+[10.932][INFO]: Waiting for pending navigations...
+[10.933][INFO]: Done waiting for pending navigations. Status: ok
+[10.936][INFO]: Waiting for pending navigations...
+[10.937][INFO]: Done waiting for pending navigations. Status: ok
+[10.937][INFO]: RESPONSE GetElementAttribute ""
+[10.938][INFO]: COMMAND GetElementAttribute {
+   "id": "0.6384143726289133-238",
+   "name": "textContent"
+}
+[10.938][INFO]: Waiting for pending navigations...
+[10.939][INFO]: Done waiting for pending navigations. Status: ok
+[10.943][INFO]: Waiting for pending navigations...
+[10.943][INFO]: Done waiting for pending navigations. Status: ok
+[10.943][INFO]: RESPONSE GetElementAttribute ""
+[10.945][INFO]: COMMAND FindElements {
+   "sessionId": "8bdcac0edad8a2000c1d1e502df3847d",
+   "using": "xpath",
+   "value": "//*[@id='content']/form/table/tbody/tr/td[6]"
+}
+[10.945][INFO]: Waiting for pending navigations...
+[10.946][INFO]: Done waiting for pending navigations. Status: ok
+[10.975][INFO]: Waiting for pending navigations...
+[10.976][INFO]: Done waiting for pending navigations. Status: ok
+[10.976][INFO]: RESPONSE FindElements [ {
+   "ELEMENT": "0.6384143726289133-239"
+}, {
+   "ELEMENT": "0.6384143726289133-240"
+}, {
+   "ELEMENT": "0.6384143726289133-241"
+}, {
+   "ELEMENT": "0.6384143726289133-242"
+}, {
+   "ELEMENT": "0.6384143726289133-243"
+}, {
+   "ELEMENT": "0.6384143726289133-244"
+}, {
+   "ELEMENT": "0.6384143726289133-245"
+}, {
+   "ELEMENT": "0.6384143726289133-246"
+}, {
+   "ELEMENT": "0.6384143726289133-247"
+}, {
+   "ELEMENT": "0.6384143726289133-248"
+}, {
+   "ELEMENT": "0.6384143726289133-249"
+}, {
+   "ELEMENT": "0.6384143726289133-250"
+}, {
+   "ELEMENT": "0.6384143726289133-251"
+}, {
+   "ELEMENT": "0.6384143726289133-252"
+}, {
+   "ELEMENT": "0.6384143726289133-253"
+}, {
+   "ELEMENT": "0.6384143726289133-254"
+}, {
+   "ELEMENT": "0.6384143726289133-255"
+}, {
+   "ELEMENT": "0.6384143726289133-256"
+}, {
+   "ELEMENT": "0.6384143726289133-257"
+}, "..." ]
+[10.981][INFO]: COMMAND FindElements {
+   "sessionId": "8bdcac0edad8a2000c1d1e502df3847d",
+   "using": "xpath",
+   "value": "//a[@title='Edit']"
+}
+[10.981][INFO]: Waiting for pending navigations...
+[10.982][INFO]: Done waiting for pending navigations. Status: ok
+[11.010][INFO]: Waiting for pending navigations...
+[11.010][INFO]: Done waiting for pending navigations. Status: ok
+[11.011][INFO]: RESPONSE FindElements [ {
+   "ELEMENT": "0.6384143726289133-1"
+}, {
+   "ELEMENT": "0.6384143726289133-2"
+}, {
+   "ELEMENT": "0.6384143726289133-3"
+}, {
+   "ELEMENT": "0.6384143726289133-4"
+}, {
+   "ELEMENT": "0.6384143726289133-5"
+}, {
+   "ELEMENT": "0.6384143726289133-6"
+}, {
+   "ELEMENT": "0.6384143726289133-7"
+}, {
+   "ELEMENT": "0.6384143726289133-8"
+}, {
+   "ELEMENT": "0.6384143726289133-9"
+}, {
+   "ELEMENT": "0.6384143726289133-10"
+}, {
+   "ELEMENT": "0.6384143726289133-11"
+}, {
+   "ELEMENT": "0.6384143726289133-12"
+}, {
+   "ELEMENT": "0.6384143726289133-13"
+}, {
+   "ELEMENT": "0.6384143726289133-14"
+}, {
+   "ELEMENT": "0.6384143726289133-15"
+}, {
+   "ELEMENT": "0.6384143726289133-16"
+}, {
+   "ELEMENT": "0.6384143726289133-17"
+}, {
+   "ELEMENT": "0.6384143726289133-18"
+}, {
+   "ELEMENT": "0.6384143726289133-19"
+}, "..." ]
+[11.014][INFO]: COMMAND CloseWindow {
+
+}
+[13.323][INFO]: RESPONSE CloseWindow
