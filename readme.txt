@@ -2,7 +2,7 @@ python -m pytest tests --driver Chrome --junitxml=result.xml --html report.html 
 python -m pytest tests --driver Chrome --html report.html
 
 D:\virtual_env_for_jango\hmokina_test_env\Scripts
-D:\GitHub\sel_5_newrun
+D:\GitHub\sel5_new_run
 
 
 http://software-testing.ru/lms/mod/assign/view.php

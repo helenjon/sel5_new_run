@@ -1,0 +1,288 @@
+[2.993][INFO]: COMMAND InitSession {
+   "capabilities": {
+      "alwaysMatch": {
+         "browserName": "chrome",
+         "goog:chromeOptions": {
+            "args": [  ],
+            "extensions": [  ]
+         },
+         "platformName": "any"
+      },
+      "firstMatch": [ {
+
+      } ]
+   },
+   "desiredCapabilities": {
+      "browserName": "chrome",
+      "goog:chromeOptions": {
+         "args": [  ],
+         "extensions": [  ]
+      },
+      "platform": "ANY",
+      "version": ""
+   }
+}
+[2.995][INFO]: Populating Preferences file: {
+   "alternate_error_pages": {
+      "enabled": false
+   },
+   "autofill": {
+      "enabled": false
+   },
+   "browser": {
+      "check_default_browser": false
+   },
+   "distribution": {
+      "import_bookmarks": false,
+      "import_history": false,
+      "import_search_engine": false,
+      "make_chrome_default_for_user": false,
+      "skip_first_run_ui": true
+   },
+   "dns_prefetching": {
+      "enabled": false
+   },
+   "profile": {
+      "content_settings": {
+         "pattern_pairs": {
+            "https://*,*": {
+               "media-stream": {
+                  "audio": "Default",
+                  "video": "Default"
+               }
+            }
+         }
+      },
+      "default_content_setting_values": {
+         "geolocation": 1
+      },
+      "default_content_settings": {
+         "geolocation": 1,
+         "mouselock": 1,
+         "notifications": 1,
+         "popups": 1,
+         "ppapi-broker": 1
+      },
+      "password_manager_enabled": false
+   },
+   "safebrowsing": {
+      "enabled": false
+   },
+   "search": {
+      "suggest_enabled": false
+   },
+   "translate": {
+      "enabled": false
+   }
+}
+[3.020][INFO]: Populating Local State file: {
+   "background_mode": {
+      "enabled": false
+   },
+   "ssl": {
+      "rev_checking": {
+         "enabled": false
+      }
+   }
+}
+[3.036][INFO]: Launching chrome: "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --disable-background-networking --disable-client-side-phishing-detection --disable-default-apps --disable-hang-monitor --disable-popup-blocking --disable-prompt-on-repost --disable-sync --disable-web-resources --enable-automation --enable-logging --force-fieldtrials=SiteIsolationExtensions/Control --ignore-certificate-errors --load-extension="C:\Users\omokina\AppData\Local\Temp\scoped_dir6048_5175\internal" --log-level=0 --metrics-recording-only --no-first-run --password-store=basic --remote-debugging-port=12024 --test-type=webdriver --use-mock-keychain --user-data-dir="C:\Users\omokina\AppData\Local\Temp\scoped_dir6048_22977" data:,
+[3.417][INFO]: resolved localhost to ["::1","127.0.0.1"]
+[4.442][INFO]: RESPONSE InitSession {
+   "acceptSslCerts": true,
+   "applicationCacheEnabled": false,
+   "browserConnectionEnabled": false,
+   "browserName": "chrome",
+   "chrome": {
+      "chromedriverVersion": "2.34.522940 (1a76f96f66e3ca7b8e57d503b4dd3bccfba87af1)",
+      "userDataDir": "C:\\Users\\omokina\\AppData\\Local\\Temp\\scoped_dir6048_22977"
+   },
+   "cssSelectorsEnabled": true,
+   "databaseEnabled": false,
+   "handlesAlerts": true,
+   "hasTouchScreen": false,
+   "javascriptEnabled": true,
+   "locationContextEnabled": true,
+   "mobileEmulationEnabled": false,
+   "nativeEvents": true,
+   "networkConnectionEnabled": false,
+   "pageLoadStrategy": "normal",
+   "platform": "Windows NT",
+   "rotatable": false,
+   "setWindowRect": true,
+   "takesHeapSnapshot": true,
+   "~~~": "..."
+}
+[4.449][INFO]: COMMAND SetImplicitWait {
+   "ms": 300000.0,
+   "sessionId": "3100fcc4221378665f896779bdfd068f"
+}
+[4.449][INFO]: RESPONSE SetImplicitWait
+[4.450][INFO]: COMMAND MaximizeWindow {
+   "sessionId": "3100fcc4221378665f896779bdfd068f",
+   "windowHandle": "current"
+}
+[4.451][INFO]: resolved localhost to ["::1","127.0.0.1"]
+[5.574][INFO]: RESPONSE MaximizeWindow
+[5.577][INFO]: COMMAND SetImplicitWait {
+   "ms": 30000.0,
+   "sessionId": "3100fcc4221378665f896779bdfd068f"
+}
+[5.577][INFO]: RESPONSE SetImplicitWait
+[5.581][INFO]: COMMAND Navigate {
+   "sessionId": "3100fcc4221378665f896779bdfd068f",
+   "url": "http://localhost:8081/litecart/admin/login.php"
+}
+[5.581][INFO]: Waiting for pending navigations...
+[5.611][INFO]: Done waiting for pending navigations. Status: ok
+[6.296][INFO]: Waiting for pending navigations...
+[6.667][INFO]: Done waiting for pending navigations. Status: ok
+[6.667][INFO]: RESPONSE Navigate
+[6.670][INFO]: COMMAND FindElement {
+   "sessionId": "3100fcc4221378665f896779bdfd068f",
+   "using": "name",
+   "value": "username"
+}
+[6.670][INFO]: Waiting for pending navigations...
+[6.671][INFO]: Done waiting for pending navigations. Status: ok
+[6.686][INFO]: Waiting for pending navigations...
+[6.686][INFO]: Done waiting for pending navigations. Status: ok
+[6.686][INFO]: RESPONSE FindElement {
+   "ELEMENT": "0.45531934415451203-1"
+}
+[6.688][INFO]: COMMAND TypeElement {
+   "id": "0.45531934415451203-1",
+   "sessionId": "3100fcc4221378665f896779bdfd068f",
+   "text": "admin",
+   "value": [ "a", "d", "m", "i", "n" ]
+}
+[6.688][INFO]: Waiting for pending navigations...
+[6.690][INFO]: Done waiting for pending navigations. Status: ok
+[6.731][INFO]: Waiting for pending navigations...
+[6.731][INFO]: Done waiting for pending navigations. Status: ok
+[6.731][INFO]: RESPONSE TypeElement
+[6.733][INFO]: COMMAND FindElement {
+   "sessionId": "3100fcc4221378665f896779bdfd068f",
+   "using": "name",
+   "value": "password"
+}
+[6.733][INFO]: Waiting for pending navigations...
+[6.734][INFO]: Done waiting for pending navigations. Status: ok
+[6.747][INFO]: Waiting for pending navigations...
+[6.748][INFO]: Done waiting for pending navigations. Status: ok
+[6.748][INFO]: RESPONSE FindElement {
+   "ELEMENT": "0.45531934415451203-2"
+}
+[6.750][INFO]: COMMAND TypeElement {
+   "id": "0.45531934415451203-2",
+   "sessionId": "3100fcc4221378665f896779bdfd068f",
+   "text": "admin",
+   "value": [ "a", "d", "m", "i", "n" ]
+}
+[6.750][INFO]: Waiting for pending navigations...
+[6.751][INFO]: Done waiting for pending navigations. Status: ok
+[6.792][INFO]: Waiting for pending navigations...
+[6.792][INFO]: Done waiting for pending navigations. Status: ok
+[6.792][INFO]: RESPONSE TypeElement
+[6.794][INFO]: COMMAND FindElement {
+   "sessionId": "3100fcc4221378665f896779bdfd068f",
+   "using": "name",
+   "value": "login"
+}
+[6.794][INFO]: Waiting for pending navigations...
+[6.795][INFO]: Done waiting for pending navigations. Status: ok
+[6.807][INFO]: Waiting for pending navigations...
+[6.808][INFO]: Done waiting for pending navigations. Status: ok
+[6.808][INFO]: RESPONSE FindElement {
+   "ELEMENT": "0.45531934415451203-3"
+}
+[6.810][INFO]: COMMAND ClickElement {
+   "id": "0.45531934415451203-3",
+   "sessionId": "3100fcc4221378665f896779bdfd068f"
+}
+[6.810][INFO]: Waiting for pending navigations...
+[6.811][INFO]: Done waiting for pending navigations. Status: ok
+[6.877][INFO]: Waiting for pending navigations...
+[7.638][INFO]: Done waiting for pending navigations. Status: ok
+[7.638][INFO]: RESPONSE ClickElement
+[7.642][INFO]: COMMAND FindElements {
+   "sessionId": "3100fcc4221378665f896779bdfd068f",
+   "using": "xpath",
+   "value": "//*[@id=\"app-\"]/a"
+}
+[7.642][INFO]: Waiting for pending navigations...
+[7.643][INFO]: Done waiting for pending navigations. Status: ok
+[7.658][INFO]: Waiting for pending navigations...
+[7.658][INFO]: Done waiting for pending navigations. Status: ok
+[7.658][INFO]: RESPONSE FindElements [ {
+   "ELEMENT": "0.4181559550274654-1"
+}, {
+   "ELEMENT": "0.4181559550274654-2"
+}, {
+   "ELEMENT": "0.4181559550274654-3"
+}, {
+   "ELEMENT": "0.4181559550274654-4"
+}, {
+   "ELEMENT": "0.4181559550274654-5"
+}, {
+   "ELEMENT": "0.4181559550274654-6"
+}, {
+   "ELEMENT": "0.4181559550274654-7"
+}, {
+   "ELEMENT": "0.4181559550274654-8"
+}, {
+   "ELEMENT": "0.4181559550274654-9"
+}, {
+   "ELEMENT": "0.4181559550274654-10"
+}, {
+   "ELEMENT": "0.4181559550274654-11"
+}, {
+   "ELEMENT": "0.4181559550274654-12"
+}, {
+   "ELEMENT": "0.4181559550274654-13"
+}, {
+   "ELEMENT": "0.4181559550274654-14"
+}, {
+   "ELEMENT": "0.4181559550274654-15"
+}, {
+   "ELEMENT": "0.4181559550274654-16"
+}, {
+   "ELEMENT": "0.4181559550274654-17"
+} ]
+[7.661][INFO]: COMMAND ClickElement {
+   "id": "0.4181559550274654-3",
+   "sessionId": "3100fcc4221378665f896779bdfd068f"
+}
+[7.661][INFO]: Waiting for pending navigations...
+[7.662][INFO]: Done waiting for pending navigations. Status: ok
+[7.708][INFO]: Waiting for pending navigations...
+[8.308][INFO]: Done waiting for pending navigations. Status: ok
+[8.308][INFO]: RESPONSE ClickElement
+[8.310][INFO]: COMMAND FindElement {
+   "sessionId": "3100fcc4221378665f896779bdfd068f",
+   "using": "xpath",
+   "value": "//input[@name='status' and @value='1']"
+}
+[8.310][INFO]: Waiting for pending navigations...
+[8.310][INFO]: Done waiting for pending navigations. Status: ok
+[20.773][INFO]: Waiting for pending navigations...
+[20.790][SEVERE]: Unable to receive message from renderer
+[20.791][INFO]: Done waiting for pending navigations. Status: ok
+[20.861][INFO]: RESPONSE FindElement
+[20.945][INFO]: COMMAND GetUrl {
+
+}
+[20.945][INFO]: RESPONSE GetUrl no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=64.0.3282.167)
+[20.947][INFO]: COMMAND Screenshot {
+
+}
+[20.947][INFO]: RESPONSE Screenshot no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=64.0.3282.167)
+[20.949][INFO]: COMMAND GetSource {
+
+}
+[20.949][INFO]: RESPONSE GetSource no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=64.0.3282.167)

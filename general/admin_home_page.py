@@ -26,10 +26,11 @@ class AdminHomePage(DriverConstructor):
         return self.driver.find_element(By.LINK_TEXT, 'Countries')
 
 
+    def catalog_link(self):
+        return self.main_menu_links()[1]
+
     def list_of_countries(self):
         return self.driver.find_elements(By.XPATH, ".//*[@id='content']/form/table/tbody/tr/td[@style]/a")
-
-
 
 
 
@@ -42,6 +43,7 @@ class AdminHomePage(DriverConstructor):
 
     def list_of_edit_property(self):
         return self.driver.find_elements(By.XPATH, "//a[@title='Edit']")
+
 
 
 

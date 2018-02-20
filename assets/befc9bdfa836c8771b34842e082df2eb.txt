@@ -1,0 +1,446 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
+<title>
+  
+  
+ Catalog | My Store</title>
+<meta charset="UTF-8" />
+<meta name="robots" content="noindex, nofollow" />
+<link rel="shortcut icon" href="/litecart/favicon.ico" />
+<link href="/litecart/includes/templates/default.admin/styles/loader.css" rel="stylesheet" media="all" />
+<link href="/litecart/includes/templates/default.admin/styles/theme.css" rel="stylesheet" media="all" />
+<link rel="stylesheet" href="/litecart/ext/fontawesome/css/font-awesome.min.css" />
+<style>
+&lt;!--/*--&gt;&lt;![CDATA[/*&gt;&lt;!--*/
+#content {
+  background: #fff; /* Old browsers */
+  background: -moz-linear-gradient(-45deg, rgba(208, 204, 79, 1) 0px, rgba(255,255,255,1) 100px); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(0px, rgba(208, 204, 79, 1)), color-stop(100px,rgba(255,255,255,1))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(-45deg, rgba(208, 204, 79, 1) 0px, rgba(255,255,255,1) 100px); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(-45deg, rgba(208, 204, 79, 1) 0px, rgba(255,255,255,1) 100px); /* Opera 11.10+ */
+  background: -ms-linear-gradient(-45deg, rgba(208, 204, 79, 1) 0px, rgba(255,255,255,1) 100px); /* IE10+ */
+  background: linear-gradient(135deg, rgba(208, 204, 79, 1) 0px, rgba(255,255,255,1) 100px); /* W3C */
+}
+/*]]&gt;*/--&gt;
+</style>
+</head>
+<body>
+
+<div id="body-wrapper">
+  <div id="body">
+    <div id="content-wrapper">
+    <table style="width: 100%;">
+      <tbody><tr>
+        <td id="sidebar" style="vertical-align: top; width: 230px;">
+          <div class="logotype">
+            <a href="http://localhost:8081/litecart/admin/"><img src="/litecart/cache/ae1ca1a5f4d14ae8dd1bcb22bb084d255f56657a220x70_fob.png" alt="My Store" title="My Store" /></a>
+          </div>
+          <div class="header">
+            <a href="http://localhost:8081/litecart/en/" title="Catalog"><i class="fa fa-chevron-circle-left"></i></a>
+            <a href="http://localhost:8081/litecart/admin/" title="Home"><i class="fa fa-home fa-lg"></i></a>
+            <a href="?app=settings&amp;doc=advanced&amp;action=edit&amp;key=webmail_link" target="_blank" title="Webmail"><i class="fa fa-envelope"></i></a>            <a href="?app=settings&amp;doc=advanced&amp;action=edit&amp;key=database_admin_link" target="_blank" title="Database Manager"><i class="fa fa-database"></i></a>            <a href="http://localhost:8081/litecart/admin/logout.php" title="Logout"><i class="fa fa-sign-out fa-lg"></i></a>
+          </div>
+
+          
+          <div id="box-apps-menu-wrapper">
+  <ul id="box-apps-menu" class="list-vertical">
+          <li id="app-">
+        <a href="http://localhost:8081/litecart/admin/?app=appearance&amp;doc=template">
+        <span class="fa-stack fa-lg icon-wrapper">
+          <i class="fa fa-circle fa-stack-2x icon-background" style="color: #ff387c;"></i>          <i class="fa fa-adjust fa-stack-1x icon" style="color: #fff;"></i>        </span>
+        <span class="name">Appearence</span>
+      </a>
+
+      
+    </li>
+        <li id="app-" class="selected">
+        <a href="http://localhost:8081/litecart/admin/?app=catalog&amp;doc=catalog">
+        <span class="fa-stack fa-lg icon-wrapper">
+          <i class="fa fa-circle fa-stack-2x icon-background" style="color: #d0cc4f;"></i>          <i class="fa fa-th fa-stack-1x icon" style="color: #fff;"></i>        </span>
+        <span class="name">Catalog</span>
+      </a>
+
+            <ul class="docs">
+                <li id="doc-catalog" class="selected"><a href="http://localhost:8081/litecart/admin/?app=catalog&amp;doc=catalog"><span class="name">Catalog</span></a></li>
+                <li id="doc-product_groups"><a href="http://localhost:8081/litecart/admin/?app=catalog&amp;doc=product_groups"><span class="name">Product Groups</span></a></li>
+                <li id="doc-option_groups"><a href="http://localhost:8081/litecart/admin/?app=catalog&amp;doc=option_groups"><span class="name">Option Groups</span></a></li>
+                <li id="doc-manufacturers"><a href="http://localhost:8081/litecart/admin/?app=catalog&amp;doc=manufacturers"><span class="name">Manufacturers</span></a></li>
+                <li id="doc-suppliers"><a href="http://localhost:8081/litecart/admin/?app=catalog&amp;doc=suppliers"><span class="name">Suppliers</span></a></li>
+                <li id="doc-delivery_statuses"><a href="http://localhost:8081/litecart/admin/?app=catalog&amp;doc=delivery_statuses"><span class="name">Delivery Statuses</span></a></li>
+                <li id="doc-sold_out_statuses"><a href="http://localhost:8081/litecart/admin/?app=catalog&amp;doc=sold_out_statuses"><span class="name">Sold Out Statuses</span></a></li>
+                <li id="doc-quantity_units"><a href="http://localhost:8081/litecart/admin/?app=catalog&amp;doc=quantity_units"><span class="name">Quantity Units</span></a></li>
+                <li id="doc-csv"><a href="http://localhost:8081/litecart/admin/?app=catalog&amp;doc=csv"><span class="name">CSV Import/Export</span></a></li>
+              </ul>
+      
+    </li>
+        <li id="app-">
+        <a href="http://localhost:8081/litecart/admin/?app=countries&amp;doc=countries">
+        <span class="fa-stack fa-lg icon-wrapper">
+          <i class="fa fa-circle fa-stack-2x icon-background" style="color: #69c5e7;"></i>          <i class="fa fa-flag fa-stack-1x icon" style="color: #fff;"></i>        </span>
+        <span class="name">Countries</span>
+      </a>
+
+      
+    </li>
+        <li id="app-">
+        <a href="http://localhost:8081/litecart/admin/?app=currencies&amp;doc=currencies">
+        <span class="fa-stack fa-lg icon-wrapper">
+          <i class="fa fa-circle fa-stack-2x icon-background" style="color: #f3be30;"></i>          <i class="fa fa-money fa-stack-1x icon" style="color: #fff;"></i>        </span>
+        <span class="name">Currencies</span>
+      </a>
+
+      
+    </li>
+        <li id="app-">
+        <a href="http://localhost:8081/litecart/admin/?app=customers&amp;doc=customers">
+        <span class="fa-stack fa-lg icon-wrapper">
+          <i class="fa fa-circle fa-stack-2x icon-background" style="color: #5ab687;"></i>          <i class="fa fa-user fa-stack-1x icon" style="color: #fff;"></i>        </span>
+        <span class="name">Customers</span>
+      </a>
+
+      
+    </li>
+        <li id="app-">
+        <a href="http://localhost:8081/litecart/admin/?app=geo_zones&amp;doc=geo_zones">
+        <span class="fa-stack fa-lg icon-wrapper">
+          <i class="fa fa-circle fa-stack-2x icon-background" style="color: #6aabe8;"></i>          <i class="fa fa-globe fa-stack-1x icon" style="color: #fff;"></i>        </span>
+        <span class="name">Geo Zones</span>
+      </a>
+
+      
+    </li>
+        <li id="app-">
+        <a href="http://localhost:8081/litecart/admin/?app=languages&amp;doc=languages">
+        <span class="fa-stack fa-lg icon-wrapper">
+          <i class="fa fa-circle fa-stack-2x icon-background" style="color: #4b79a5;"></i>          <i class="fa fa-comments fa-stack-1x icon" style="color: #fff;"></i>        </span>
+        <span class="name">Languages</span>
+      </a>
+
+      
+    </li>
+        <li id="app-">
+        <a href="http://localhost:8081/litecart/admin/?app=modules&amp;doc=jobs">
+        <span class="fa-stack fa-lg icon-wrapper">
+          <i class="fa fa-circle fa-stack-2x icon-background" style="color: #c78dc8;"></i>          <i class="fa fa-cube fa-stack-1x icon" style="color: #fff;"></i>        </span>
+        <span class="name">Modules</span>
+      </a>
+
+      
+    </li>
+        <li id="app-">
+        <a href="http://localhost:8081/litecart/admin/?app=orders&amp;doc=orders">
+        <span class="fa-stack fa-lg icon-wrapper">
+          <i class="fa fa-circle fa-stack-2x icon-background" style="color: #b2db64;"></i>          <i class="fa fa-shopping-cart fa-stack-1x icon" style="color: #fff;"></i>        </span>
+        <span class="name">Orders</span>
+      </a>
+
+      
+    </li>
+        <li id="app-">
+        <a href="http://localhost:8081/litecart/admin/?app=pages&amp;doc=pages">
+        <span class="fa-stack fa-lg icon-wrapper">
+          <i class="fa fa-circle fa-stack-2x icon-background" style="color: #bec6b4;"></i>          <i class="fa fa-file-text fa-stack-1x icon" style="color: #fff;"></i>        </span>
+        <span class="name">Pages</span>
+      </a>
+
+      
+    </li>
+        <li id="app-">
+        <a href="http://localhost:8081/litecart/admin/?app=reports&amp;doc=monthly_sales">
+        <span class="fa-stack fa-lg icon-wrapper">
+          <i class="fa fa-circle fa-stack-2x icon-background" style="color: #b79d82;"></i>          <i class="fa fa-pie-chart fa-stack-1x icon" style="color: #fff;"></i>        </span>
+        <span class="name">Reports</span>
+      </a>
+
+      
+    </li>
+        <li id="app-">
+        <a href="http://localhost:8081/litecart/admin/?app=settings&amp;doc=store_info">
+        <span class="fa-stack fa-lg icon-wrapper">
+          <i class="fa fa-circle fa-stack-2x icon-background" style="color: #a3a3a3;"></i>          <i class="fa fa-cogs fa-stack-1x icon" style="color: #fff;"></i>        </span>
+        <span class="name">Settings</span>
+      </a>
+
+      
+    </li>
+        <li id="app-">
+        <a href="http://localhost:8081/litecart/admin/?app=slides&amp;doc=slides">
+        <span class="fa-stack fa-lg icon-wrapper">
+          <i class="fa fa-circle fa-stack-2x icon-background" style="color: #b89dd9;"></i>          <i class="fa fa-picture-o fa-stack-1x icon" style="color: #fff;"></i>        </span>
+        <span class="name">Slides</span>
+      </a>
+
+      
+    </li>
+        <li id="app-">
+        <a href="http://localhost:8081/litecart/admin/?app=tax&amp;doc=tax_classes">
+        <span class="fa-stack fa-lg icon-wrapper">
+          <i class="fa fa-circle fa-stack-2x icon-background" style="color: #ccd2af;"></i>          <i class="fa fa-university fa-stack-1x icon" style="color: #fff;"></i>        </span>
+        <span class="name">Tax</span>
+      </a>
+
+      
+    </li>
+        <li id="app-">
+        <a href="http://localhost:8081/litecart/admin/?app=translations&amp;doc=search">
+        <span class="fa-stack fa-lg icon-wrapper">
+          <i class="fa fa-circle fa-stack-2x icon-background" style="color: #cd9e9e;"></i>          <i class="fa fa-book fa-stack-1x icon" style="color: #fff;"></i>        </span>
+        <span class="name">Translations</span>
+      </a>
+
+      
+    </li>
+        <li id="app-">
+        <a href="http://localhost:8081/litecart/admin/?app=users&amp;doc=users">
+        <span class="fa-stack fa-lg icon-wrapper">
+          <i class="fa fa-circle fa-stack-2x icon-background" style="color: #f8af5a;"></i>          <i class="fa fa-star fa-stack-1x icon" style="color: #fff;"></i>        </span>
+        <span class="name">Users</span>
+      </a>
+
+      
+    </li>
+        <li id="app-">
+        <a href="http://localhost:8081/litecart/admin/?app=vqmods&amp;doc=vqmods">
+        <span class="fa-stack fa-lg icon-wrapper">
+          <i class="fa fa-circle fa-stack-2x icon-background" style="color: #a6dad7;"></i>          <i class="fa fa-plug fa-stack-1x icon" style="color: #fff;"></i>        </span>
+        <span class="name">vQmods</span>
+      </a>
+
+      
+    </li>
+    </ul>
+</div>
+
+          <div class="footer">
+            <div class="languages" style="text-align: center; margin-bottom: 10px 0 20px 0;">
+<a href="http://localhost:8081/litecart/admin/?app=catalog&amp;doc=catalog&amp;category_id=0&amp;language=en"><img src="/litecart/images/icons/languages/en.png" alt="English" style="max-width: 16px;" /></a>             </div>
+
+            <div id="platform">LiteCart® 1.3.7</div>
+
+            <div id="copyright">© 2012-2018 LiteCart<br />
+              <a href="http://www.litecart.net" target="_blank">www.litecart.net</a>
+            </div>
+          </div>
+        </td>
+        <td id="column_left" style="vertical-align: top;">
+                  </td>
+        <td id="content" style="vertical-align: top;">
+                    
+<span style="float: right; margin-left: 10px;"><a href="http://wiki.litecart.net/?id=Admin%3Acatalog%2Fcatalog" target="_blank" title="Help"><i class="fa fa-question-circle" style="font-size: 2em; color: #0099cc;"></i></a></span>
+
+<div style="float: right;"><a class="button" href="http://localhost:8081/litecart/admin/?app=catalog&amp;doc=edit_category&amp;parent_id=0"><i class="fa fa-plus-circle" style="color: #66cc66;"></i> Add New Category</a> <a class="button" href="http://localhost:8081/litecart/admin/?category_id=0&amp;app=catalog&amp;doc=edit_product"><i class="fa fa-plus-circle" style="color: #66cc66;"></i> Add New Product</a></div>
+<div style="float: right; padding-right: 10px;"><form name="search_form" method="get" enctype="application/x-www-form-urlencoded" accept-charset="UTF-8" onsubmit="return false;">
+<input type="search" name="query" value="" data-type="search" placeholder="Search phrase or keyword" onkeydown=" if (event.keyCode == 13) location=('http://localhost:8081/litecart/admin/?app=catalog&amp;doc=catalog&amp;category_id=0&amp;query=' + encodeURIComponent(this.value))" data-size="medium" /></form>
+</div>
+<h1 style="margin-top: 0px;"><span class="fa-stack icon-wrapper">
+  <i class="fa fa-circle fa-stack-2x icon-background" style="color: #d0cc4f;"></i>
+  <i class="fa fa-th fa-stack-1x icon" style="color: #fff;"></i>
+</span> Catalog</h1>
+
+<form name="catalog_form" method="post" enctype="application/x-www-form-urlencoded" accept-charset="UTF-8">
+<input type="hidden" name="token" value="08595f416afdef8fdb452e25ef6220a7190e02a3" />
+
+  <table class="dataTable" width="100%">
+    <tbody><tr class="header">
+      <th><i class="fa fa-check-square-o fa-fw checkbox-toggle"></i></th>
+      <th></th>
+      <th width="100%">Name</th>
+      <th style="text-align: center;"></th>
+      <th> </th>
+    </tr>
+<tr class="row">
+  <td></td>
+  <td></td>
+  <td><i class="fa fa-folder-open" style="color: #cccc66;"></i> <strong><a href="http://localhost:8081/litecart/admin/?app=catalog&amp;doc=catalog&amp;category_id=0">[Root]</a></strong></td>
+  <td> </td>
+  <td> </td>
+</tr>
+<tr class="row">
+  <td><input type="checkbox" name="categories[1]" value="1" /></td>
+  <td><i class="fa fa-circle" style="color: #99cc66;"></i></td>
+  <td><i class="fa fa-folder" style="color: #cccc66; margin-left: 16px;"></i> <a href="http://localhost:8081/litecart/admin/?app=catalog&amp;doc=catalog&amp;category_id=1">Rubber Ducks</a></td>
+  <td> </td>
+  <td><a href="http://localhost:8081/litecart/admin/?app=catalog&amp;doc=edit_category&amp;category_id=1" title="Edit"><i class="fa fa-pencil"></i></a></td>
+</tr>
+<tr class="row">
+  <td><input type="checkbox" name="categories[3]" value="3" /></td>
+  <td><i class="fa fa-circle" style="color: #99cc66;"></i></td>
+  <td><i class="fa fa-folder" style="color: #cccc66; margin-left: 16px;"></i> <a href="http://localhost:8081/litecart/admin/?app=catalog&amp;doc=catalog&amp;category_id=3">TestAuto</a></td>
+  <td> </td>
+  <td><a href="http://localhost:8081/litecart/admin/?app=catalog&amp;doc=edit_category&amp;category_id=3" title="Edit"><i class="fa fa-pencil"></i></a></td>
+</tr>
+<tr class="row">
+  <td><input type="checkbox" name="products[21]" value="21" /></td>
+  <td><i class="fa fa-circle" style="color: #99cc66;"></i></td>
+  <td><img src="/litecart/cache/27171445d25905ae98a197396e0f45e0dd19da2a16x16_fwb.png" style="margin-left: 16px; width: 16px; height: 16px; vertical-align: bottom;" /> <a href="http://localhost:8081/litecart/admin/?app=catalog&amp;doc=edit_product&amp;category_id=0&amp;product_id=21">new new</a></td>
+  <td style="text-align: right;"></td>
+  <td><a href="http://localhost:8081/litecart/admin/?app=catalog&amp;doc=edit_product&amp;category_id=0&amp;product_id=21" title="Edit"><i class="fa fa-pencil"></i></a></td>
+</tr>
+<tr class="row">
+  <td><input type="checkbox" name="products[6]" value="6" /></td>
+  <td><i class="fa fa-circle" style="color: #99cc66;"></i></td>
+  <td><img src="/litecart/cache/c9852e20e18f05f5e2aba0a9ccf9c98421bbeb6b16x16_fwb.png" style="margin-left: 16px; width: 16px; height: 16px; vertical-align: bottom;" /> <a href="http://localhost:8081/litecart/admin/?app=catalog&amp;doc=edit_product&amp;category_id=0&amp;product_id=6">test</a></td>
+  <td style="text-align: right;"></td>
+  <td><a href="http://localhost:8081/litecart/admin/?app=catalog&amp;doc=edit_product&amp;category_id=0&amp;product_id=6" title="Edit"><i class="fa fa-pencil"></i></a></td>
+</tr>
+<tr class="row">
+  <td><input type="checkbox" name="products[7]" value="7" /></td>
+  <td><i class="fa fa-circle" style="color: #99cc66;"></i></td>
+  <td><img src="/litecart/cache/27171445d25905ae98a197396e0f45e0dd19da2a16x16_fwb.png" style="margin-left: 16px; width: 16px; height: 16px; vertical-align: bottom;" /> <a href="http://localhost:8081/litecart/admin/?app=catalog&amp;doc=edit_product&amp;category_id=0&amp;product_id=7">test1</a></td>
+  <td style="text-align: right;"></td>
+  <td><a href="http://localhost:8081/litecart/admin/?app=catalog&amp;doc=edit_product&amp;category_id=0&amp;product_id=7" title="Edit"><i class="fa fa-pencil"></i></a></td>
+</tr>
+<tr class="row semi-transparent">
+  <td><input type="checkbox" name="products[8]" value="8" /></td>
+  <td><i class="fa fa-circle" style="color: #ff6666;"></i></td>
+  <td><img src="/litecart/cache/27171445d25905ae98a197396e0f45e0dd19da2a16x16_fwb.png" style="margin-left: 16px; width: 16px; height: 16px; vertical-align: bottom;" /> <a href="http://localhost:8081/litecart/admin/?app=catalog&amp;doc=edit_product&amp;category_id=0&amp;product_id=8">test1234</a></td>
+  <td style="text-align: right;"></td>
+  <td><a href="http://localhost:8081/litecart/admin/?app=catalog&amp;doc=edit_product&amp;category_id=0&amp;product_id=8" title="Edit"><i class="fa fa-pencil"></i></a></td>
+</tr>
+<tr class="row semi-transparent">
+  <td><input type="checkbox" name="products[11]" value="11" /></td>
+  <td><i class="fa fa-circle" style="color: #ff6666;"></i></td>
+  <td><img src="/litecart/cache/27171445d25905ae98a197396e0f45e0dd19da2a16x16_fwb.png" style="margin-left: 16px; width: 16px; height: 16px; vertical-align: bottom;" /> <a href="http://localhost:8081/litecart/admin/?app=catalog&amp;doc=edit_product&amp;category_id=0&amp;product_id=11">test1234</a></td>
+  <td style="text-align: right;"></td>
+  <td><a href="http://localhost:8081/litecart/admin/?app=catalog&amp;doc=edit_product&amp;category_id=0&amp;product_id=11" title="Edit"><i class="fa fa-pencil"></i></a></td>
+</tr>
+<tr class="row">
+  <td><input type="checkbox" name="products[13]" value="13" /></td>
+  <td><i class="fa fa-circle" style="color: #99cc66;"></i></td>
+  <td><img src="/litecart/cache/27171445d25905ae98a197396e0f45e0dd19da2a16x16_fwb.png" style="margin-left: 16px; width: 16px; height: 16px; vertical-align: bottom;" /> <a href="http://localhost:8081/litecart/admin/?app=catalog&amp;doc=edit_product&amp;category_id=0&amp;product_id=13">test3</a></td>
+  <td style="text-align: right;"></td>
+  <td><a href="http://localhost:8081/litecart/admin/?app=catalog&amp;doc=edit_product&amp;category_id=0&amp;product_id=13" title="Edit"><i class="fa fa-pencil"></i></a></td>
+</tr>
+<tr class="row">
+  <td><input type="checkbox" name="products[17]" value="17" /></td>
+  <td><i class="fa fa-circle" style="color: #99cc66;"></i></td>
+  <td><img src="/litecart/cache/27171445d25905ae98a197396e0f45e0dd19da2a16x16_fwb.png" style="margin-left: 16px; width: 16px; height: 16px; vertical-align: bottom;" /> <a href="http://localhost:8081/litecart/admin/?app=catalog&amp;doc=edit_product&amp;category_id=0&amp;product_id=17">test3</a></td>
+  <td style="text-align: right;"></td>
+  <td><a href="http://localhost:8081/litecart/admin/?app=catalog&amp;doc=edit_product&amp;category_id=0&amp;product_id=17" title="Edit"><i class="fa fa-pencil"></i></a></td>
+</tr>
+<tr class="row">
+  <td><input type="checkbox" name="products[10]" value="10" /></td>
+  <td><i class="fa fa-circle" style="color: #99cc66;"></i></td>
+  <td><img src="/litecart/cache/27171445d25905ae98a197396e0f45e0dd19da2a16x16_fwb.png" style="margin-left: 16px; width: 16px; height: 16px; vertical-align: bottom;" /> <a href="http://localhost:8081/litecart/admin/?app=catalog&amp;doc=edit_product&amp;category_id=0&amp;product_id=10">test3</a></td>
+  <td style="text-align: right;"></td>
+  <td><a href="http://localhost:8081/litecart/admin/?app=catalog&amp;doc=edit_product&amp;category_id=0&amp;product_id=10" title="Edit"><i class="fa fa-pencil"></i></a></td>
+</tr>
+<tr class="row">
+  <td><input type="checkbox" name="products[19]" value="19" /></td>
+  <td><i class="fa fa-circle" style="color: #99cc66;"></i></td>
+  <td><img src="/litecart/cache/27171445d25905ae98a197396e0f45e0dd19da2a16x16_fwb.png" style="margin-left: 16px; width: 16px; height: 16px; vertical-align: bottom;" /> <a href="http://localhost:8081/litecart/admin/?app=catalog&amp;doc=edit_product&amp;category_id=0&amp;product_id=19">test3</a></td>
+  <td style="text-align: right;"></td>
+  <td><a href="http://localhost:8081/litecart/admin/?app=catalog&amp;doc=edit_product&amp;category_id=0&amp;product_id=19" title="Edit"><i class="fa fa-pencil"></i></a></td>
+</tr>
+<tr class="row">
+  <td><input type="checkbox" name="products[12]" value="12" /></td>
+  <td><i class="fa fa-circle" style="color: #99cc66;"></i></td>
+  <td><img src="/litecart/cache/27171445d25905ae98a197396e0f45e0dd19da2a16x16_fwb.png" style="margin-left: 16px; width: 16px; height: 16px; vertical-align: bottom;" /> <a href="http://localhost:8081/litecart/admin/?app=catalog&amp;doc=edit_product&amp;category_id=0&amp;product_id=12">test3</a></td>
+  <td style="text-align: right;"></td>
+  <td><a href="http://localhost:8081/litecart/admin/?app=catalog&amp;doc=edit_product&amp;category_id=0&amp;product_id=12" title="Edit"><i class="fa fa-pencil"></i></a></td>
+</tr>
+<tr class="row">
+  <td><input type="checkbox" name="products[14]" value="14" /></td>
+  <td><i class="fa fa-circle" style="color: #99cc66;"></i></td>
+  <td><img src="/litecart/cache/27171445d25905ae98a197396e0f45e0dd19da2a16x16_fwb.png" style="margin-left: 16px; width: 16px; height: 16px; vertical-align: bottom;" /> <a href="http://localhost:8081/litecart/admin/?app=catalog&amp;doc=edit_product&amp;category_id=0&amp;product_id=14">test3</a></td>
+  <td style="text-align: right;"></td>
+  <td><a href="http://localhost:8081/litecart/admin/?app=catalog&amp;doc=edit_product&amp;category_id=0&amp;product_id=14" title="Edit"><i class="fa fa-pencil"></i></a></td>
+</tr>
+<tr class="row">
+  <td><input type="checkbox" name="products[16]" value="16" /></td>
+  <td><i class="fa fa-circle" style="color: #99cc66;"></i></td>
+  <td><img src="/litecart/cache/27171445d25905ae98a197396e0f45e0dd19da2a16x16_fwb.png" style="margin-left: 16px; width: 16px; height: 16px; vertical-align: bottom;" /> <a href="http://localhost:8081/litecart/admin/?app=catalog&amp;doc=edit_product&amp;category_id=0&amp;product_id=16">test3</a></td>
+  <td style="text-align: right;"></td>
+  <td><a href="http://localhost:8081/litecart/admin/?app=catalog&amp;doc=edit_product&amp;category_id=0&amp;product_id=16" title="Edit"><i class="fa fa-pencil"></i></a></td>
+</tr>
+<tr class="row">
+  <td><input type="checkbox" name="products[9]" value="9" /></td>
+  <td><i class="fa fa-circle" style="color: #99cc66;"></i></td>
+  <td><img src="/litecart/cache/27171445d25905ae98a197396e0f45e0dd19da2a16x16_fwb.png" style="margin-left: 16px; width: 16px; height: 16px; vertical-align: bottom;" /> <a href="http://localhost:8081/litecart/admin/?app=catalog&amp;doc=edit_product&amp;category_id=0&amp;product_id=9">test3</a></td>
+  <td style="text-align: right;"></td>
+  <td><a href="http://localhost:8081/litecart/admin/?app=catalog&amp;doc=edit_product&amp;category_id=0&amp;product_id=9" title="Edit"><i class="fa fa-pencil"></i></a></td>
+</tr>
+<tr class="row">
+  <td><input type="checkbox" name="products[18]" value="18" /></td>
+  <td><i class="fa fa-circle" style="color: #99cc66;"></i></td>
+  <td><img src="/litecart/cache/27171445d25905ae98a197396e0f45e0dd19da2a16x16_fwb.png" style="margin-left: 16px; width: 16px; height: 16px; vertical-align: bottom;" /> <a href="http://localhost:8081/litecart/admin/?app=catalog&amp;doc=edit_product&amp;category_id=0&amp;product_id=18">test3</a></td>
+  <td style="text-align: right;"></td>
+  <td><a href="http://localhost:8081/litecart/admin/?app=catalog&amp;doc=edit_product&amp;category_id=0&amp;product_id=18" title="Edit"><i class="fa fa-pencil"></i></a></td>
+</tr>
+<tr class="row">
+  <td><input type="checkbox" name="products[20]" value="20" /></td>
+  <td><i class="fa fa-circle" style="color: #99cc66;"></i></td>
+  <td><img src="/litecart/cache/27171445d25905ae98a197396e0f45e0dd19da2a16x16_fwb.png" style="margin-left: 16px; width: 16px; height: 16px; vertical-align: bottom;" /> <a href="http://localhost:8081/litecart/admin/?app=catalog&amp;doc=edit_product&amp;category_id=0&amp;product_id=20">test3</a></td>
+  <td style="text-align: right;"></td>
+  <td><a href="http://localhost:8081/litecart/admin/?app=catalog&amp;doc=edit_product&amp;category_id=0&amp;product_id=20" title="Edit"><i class="fa fa-pencil"></i></a></td>
+</tr>
+<tr class="row semi-transparent">
+  <td><input type="checkbox" name="products[22]" value="22" /></td>
+  <td><i class="fa fa-circle" style="color: #ff6666;"></i></td>
+  <td><img src="/litecart/cache/27171445d25905ae98a197396e0f45e0dd19da2a16x16_fwb.png" style="margin-left: 16px; width: 16px; height: 16px; vertical-align: bottom;" /> <a href="http://localhost:8081/litecart/admin/?app=catalog&amp;doc=edit_product&amp;category_id=0&amp;product_id=22">testtest</a></td>
+  <td style="text-align: right;"></td>
+  <td><a href="http://localhost:8081/litecart/admin/?app=catalog&amp;doc=edit_product&amp;category_id=0&amp;product_id=22" title="Edit"><i class="fa fa-pencil"></i></a></td>
+</tr>
+<tr class="row semi-transparent">
+  <td><input type="checkbox" name="products[15]" value="15" /></td>
+  <td><i class="fa fa-circle" style="color: #ff6666;"></i></td>
+  <td><img src="/litecart/cache/27171445d25905ae98a197396e0f45e0dd19da2a16x16_fwb.png" style="margin-left: 16px; width: 16px; height: 16px; vertical-align: bottom;" /> <a href="http://localhost:8081/litecart/admin/?app=catalog&amp;doc=edit_product&amp;category_id=0&amp;product_id=15">we</a></td>
+  <td style="text-align: right;"></td>
+  <td><a href="http://localhost:8081/litecart/admin/?app=catalog&amp;doc=edit_product&amp;category_id=0&amp;product_id=15" title="Edit"><i class="fa fa-pencil"></i></a></td>
+</tr>
+    <tr class="footer">
+      <td colspan="5">Categories: 2 | Products: 17</td>
+    </tr>
+  </tbody></table>
+
+  <p>
+    </p><ul class="list-horizontal">
+      <li>With selected:</li>
+      <li><span class="button-set"><button type="submit" name="enable" value="Enable"><i class="fa fa-circle" style="font-size: 0.75em; color: #99cc66;"></i> Enable</button> <button type="submit" name="disable" value="Disable"><i class="fa fa-circle" style="font-size: 0.75em; color: #ff6666;"></i> Disable</button></span></li>
+      <li><select name="category_id" data-size="medium">
+  <option value="" selected="selected">-- Select --</option>
+  <option value="[Root]">[Root]</option>
+  <option value="1">   Rubber Ducks</option>
+  <option value="2">      Subcategory</option>
+  <option value="3">   TestAuto</option>
+</select> <span class="button-set"><button type="submit" name="move" value="Move" onclick="if (!confirm('Warning: All current mounting points will be replaced.')) return false;">Move</button><button type="submit" name="copy" value="Copy">Copy</button><button type="submit" name="duplicate" value="Duplicate">Duplicate</button></span></li>
+      <span class="button-set"><button type="submit" name="unmount" value="Unmount">Unmount</button><button type="submit" name="delete" value="Delete" onclick="if (!confirm('Are you sure?')) return false;">Delete</button></span>
+    </ul>
+  <p></p>
+
+</form>
+
+        </td>
+      </tr>
+    </tbody></table>
+    </div>
+  </div>
+</div>
+
+<script src="/litecart/ext/jquery/jquery-1.12.4.min.js"></script>
+<script src="/litecart/ext/jquery/jquery-migrate-1.4.1.min.js"></script>
+<script>
+&lt;!--/*--&gt;&lt;![CDATA[/*&gt;&lt;!--*/
+  $(".dataTable .checkbox-toggle").click(function() {
+    $(this).closest("form").find(":checkbox").each(function() {
+      $(this).attr('checked', !$(this).attr('checked'));
+    });
+    $(".dataTable .checkbox-toggle").attr("checked", true);
+  });
+
+  $('.dataTable tr').click(function(event) {
+    if ($(event.target).is('input:checkbox')) return;
+    if ($(event.target).is('a, a *')) return;
+    if ($(event.target).is('th')) return;
+    $(this).find('input:checkbox').trigger('click');
+  });
+
+  $(document).ready(function() {
+    if ($("h1")) {
+      if (document.title.substring(0, $("h1:first").text().length) == $("h1:first").text()) return;
+      document.title = $("h1:first").text() +" | "+ document.title;
+    }
+  });
+/*]]&gt;*/--&gt;
+</script>
+
+</body></html>

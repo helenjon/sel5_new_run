@@ -1,8 +1,13 @@
 from general.login_page import LoginPage
 from general.admin_home_page import AdminHomePage
 from general.base_test import BaseTest
+from general.admin_catalog_page import AddNewProduct, AdminCatalogPage
 from selenium.webdriver.common.by import By
 import pytest
+import os.path
+import datetime
+import random
+
 
 
 class TestMainAdmin(BaseTest):
@@ -12,9 +17,9 @@ class TestMainAdmin(BaseTest):
         self.login = LoginPage(driver)
         self.vars = variables
         self.admin_home_page=AdminHomePage(driver)
+        self.admin_catalog_page=AdminCatalogPage(driver)
+        self.add_new_product = AddNewProduct(driver)
         self.login.login(self.vars["admin_url"], self.vars["admin_login"], self.vars["admin_password"])
-
-
 
 
 
@@ -101,5 +106,38 @@ class TestMainAdmin(BaseTest):
             links = self.admin_home_page.main_menu_links()
 
 
-    def test_add_to
+    def test_add_new_product(self):
+        self.admin_home_page.catalog_link().click()
+        self.admin_catalog_page.add_new_product_button().click()
+#General tab fill in
+        self.add_new_product.status().click()
+        self.add_new_product.name().send_keys('test')
+        self.add_new_product.code().send_keys(self.add_new_product.code_new())
+        self.add_new_product.get_random_category_from_list().click()
+        self.add_new_product.get_random_product_groups_gender().click()
+        self.add_new_product.quantity().clear()
+        random_quantity = self.add_new_product.get_random_quantity_number()
+        self.add_new_product.quantity().send_keys(random_quantity)
+#get absolute path for file upload
+        upload_file_product_pic = os.path.abspath('files_to_upload\cake 1.png')
+        self.add_new_product.upload_image(upload_file_product_pic)
+#get valid date for date from and to
+        today_date=datetime.datetime.now().strftime('%m.%d.%Y')
+        self.add_new_product.date_valid_from().send_keys(today_date)
+        today_date_plus=(datetime.datetime.now() + datetime.timedelta(days=30)).strftime('%m.%d.%Y')
+        self.add_new_product.date_valid_to().send_keys(today_date_plus)
+#Information tab fill in
+        self.add_new_product.information_tab().click()
+        self.add_new_product.select_manufacturer()
+        self.add_new_product.keywords().send_keys('my test')
+        self.add_new_product.short_description().send_keys('my test short description')
+
+#prices tad fill in
+        self.add_new_product.prices_tab().click()
+        price=random.randrange(1, 150)
+        self.add_new_product.purchase_prices().clear()
+        self.add_new_product.purchase_prices().send_keys(price)
+
+        self.add_new_product.save_add_new_product().click()
+
 
