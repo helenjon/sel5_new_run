@@ -6,6 +6,12 @@ from driver_constructor import DriverConstructor
 
 class HomeAppPage(DriverConstructor):
 
+    def most_popular(self):
+        return self.driver.find_elements(By.XPATH, '//*[@id="box-most-popular"]/div/ul/li/a[1]')
+
+    def cart_quantity(self):
+        return self.driver.find_element(By.XPATH, "//span[@class='quantity']")
+
     def sticker(self):
         return self.driver.find_elements(By.CSS_SELECTOR, 'div.sticker')
 
@@ -40,6 +46,9 @@ class HomeAppPage(DriverConstructor):
 
     def password_field(self):
         return self.driver.find_element(By.NAME, 'password')
+
+    def checkout_cart_link(self):
+        return self.driver.find_element(By.XPATH, "//*[@id='cart']/a[3]")
 
 #other
 

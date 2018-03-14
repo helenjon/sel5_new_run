@@ -1,5 +1,6 @@
 {
   "config/test_login.py::TestLogin::()::test_login_incorrect": true, 
   "config/test_main_admin.py::TestMainAdmin::()::test_check_alphabetick_countries": true, 
-  "tests/test_main_admin.py::TestLogin::()::test_run_all_links_main_menu": true
+  "tests/test_main_admin.py::TestLogin::()::test_run_all_links_main_menu": true, 
+  "tests/test_main_app.py::TestMainApp::()::test_add_product_to_basket": true
 }

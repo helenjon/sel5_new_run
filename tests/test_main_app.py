@@ -1,10 +1,16 @@
 from general.home_app_page import HomeAppPage
 from general.base_test import BaseTest
 from general.item_app_page import ItemAppPage
+from general.checkout_app_page import ChechoutAppPage
 from general.create_new_account_app import CreateNewAccount
 from general.home_app_page_logged_user import HomeAppPageLoggedUser
 from selenium.webdriver.common.keys import Keys
+from selenium.common.exceptions import NoSuchElementException
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.common.by import By
 import unicodedata
+import time
 
 import pytest
 
@@ -18,12 +24,14 @@ class TestMainApp(BaseTest):
         self.item_app_page=ItemAppPage(driver)
         self.create_new_account_page=CreateNewAccount(driver)
         self.home_app_page_logged_user=HomeAppPageLoggedUser(driver)
-
+        self.checkout_app_page=ChechoutAppPage(driver)
+        driver.get(self.vars["main_app_url"])
+        driver.implicitly_wait(10)
 
     def not_test_count_number_of_stickers(self, driver):
 # sel-5  - task 8 - http://software-testing.ru/lms/mod/assign/view.php?id=41866
-        driver.get(self.vars["main_app_url"])
-        driver.implicitly_wait(10)
+       # driver.get(self.vars["main_app_url"])
+       # driver.implicitly_wait(10)
         print ('Number of stickers on the main page {0}'.format(len(self.home_app_page.sticker())))
 
 
@@ -31,8 +39,8 @@ class TestMainApp(BaseTest):
 # sel-5 - task 10 - http://software-testing.ru/lms/mod/assign/view.php?id=41869
 # compare data on main page - campaign section and item page for every item
 
-        driver.get(self.vars["main_app_url"])
-        driver.implicitly_wait(10)
+        #driver.get(self.vars["main_app_url"])
+        #driver.implicitly_wait(10)
         dictionaries=[]
         campaign_list = self.home_app_page.campaign_list()
         campaign_list_names = self.home_app_page.campaign_list_names()
@@ -90,8 +98,8 @@ class TestMainApp(BaseTest):
 
 
     def not_test_create_new_accout(self, driver):
-        driver.get(self.vars["main_app_url"])
-        driver.implicitly_wait(10)
+        #driver.get(self.vars["main_app_url"])
+        #driver.implicitly_wait(10)
         self.home_app_page.creat_new_customer().click()
         email = self.create_new_account_page.create_new_account()
         driver.implicitly_wait(5)
@@ -103,6 +111,46 @@ class TestMainApp(BaseTest):
         self.home_app_page.login_button().click()
 
 
+    def test_add_product_to_basket(self, driver):
+#get number of items in the cart
+        quantity= self.home_app_page.cart_quantity().get_attribute('textContent')
+        print ('Cart quantity = {} ').format(quantity)
+        wait = WebDriverWait(driver, 10)
+        self.home_app_page.most_popular()[0].click()
+#adding products to cart
+        while int(quantity)<3:
+            try:
+                self.item_app_page.product_size_drop_down()
+                self.item_app_page.select_product_size()
+                self.item_app_page.item_add_to_cart_button().click()
+            except NoSuchElementException:
+                self.item_app_page.item_add_to_cart_button().click()
+            quantityplass = int(quantity) + 1
+            wait.until(EC.text_to_be_present_in_element((By.CLASS_NAME, "quantity"), str(quantityplass)))
+            quantity = self.home_app_page.cart_quantity().get_attribute('textContent')
+            print ('Cart quantity = {} ').format(quantity)
+            self.item_app_page.similar_products_list().click()
+#removing product from cart
+        self.home_app_page.checkout_cart_link().click()
+        items_in_the_cart_table= self.checkout_app_page.items_in_the_cart_table()
+
+        while len(items_in_the_cart_table)> 0:
+            print ('Cart priducts in the cart = {} ').format(len(items_in_the_cart_table))
+            if len(items_in_the_cart_table)>1:
+                self.checkout_app_page.items_in_the_cart()[0].click()
+                self.checkout_app_page.remove_button().click()
+            else:
+                self.checkout_app_page.remove_button().click()
+            WebDriverWait(driver, 4).until(driver.find.element(By.NAME, 'remove_cart_item').is_enabled())
+            items_in_the_cart_table=self.checkout_app_page.items_in_the_cart_table()
+
+        self.checkout_app_page.back_link().click()
+        WebDriverWait(driver, 4).until(EC.visibility_of_element_located((By.XPATH, "//span[@class='quantity']")))
+        assert int(self.home_app_page.cart_quantity().get_attribute('textContent')) == 0
 
 
-        
+
+
+
+
+
