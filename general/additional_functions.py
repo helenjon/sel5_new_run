@@ -49,7 +49,7 @@ class AdditionalFunctions(DriverConstructor):
             # go to home page to check all cart
             # added wait becouse Back button became available not imideately after removing action
         WebDriverWait(self.driver, 4).until(EC.visibility_of_element_located((By.PARTIAL_LINK_TEXT, 'Back')))
-        driver.ndElement(By.id("search")).getC()
+
 
 
 
