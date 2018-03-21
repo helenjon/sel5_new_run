@@ -7,3 +7,5 @@
 *.log
 /geleral/test1.py
 /geleral/test2.py
+*.txt
+*.png
