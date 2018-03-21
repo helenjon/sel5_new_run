@@ -4,14 +4,14 @@ from general.item_app_page import ItemAppPage
 from general.checkout_app_page import ChechoutAppPage
 from general.create_new_account_app import CreateNewAccount
 from general.home_app_page_logged_user import HomeAppPageLoggedUser
+from general.additional_functions import AdditionalFunctions
 from selenium.webdriver.common.keys import Keys
 from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.common.by import By
+from time import sleep
 import unicodedata
-import time
-
 import pytest
 
 
@@ -111,7 +111,7 @@ class TestMainApp(BaseTest):
         self.home_app_page.login_button().click()
 
 
-    def test_add_product_to_basket(self, driver):
+    def not_test_add_remove_products(self, driver):
 #get number of items in the cart
         quantity= self.home_app_page.cart_quantity().get_attribute('textContent')
         print ('Cart quantity = {} ').format(quantity)
@@ -130,23 +130,42 @@ class TestMainApp(BaseTest):
             quantity = self.home_app_page.cart_quantity().get_attribute('textContent')
             print ('Cart quantity = {} ').format(quantity)
             self.item_app_page.similar_products_list().click()
+
 #removing product from cart
         self.home_app_page.checkout_cart_link().click()
+#items_in_the_cart_table - additional variable because items can be different from quantity (1 item-2peaces)
         items_in_the_cart_table= self.checkout_app_page.items_in_the_cart_table()
-
         while len(items_in_the_cart_table)> 0:
             print ('Cart priducts in the cart = {} ').format(len(items_in_the_cart_table))
             if len(items_in_the_cart_table)>1:
                 self.checkout_app_page.items_in_the_cart()[0].click()
+                remove_old = self.checkout_app_page.remove_button()
                 self.checkout_app_page.remove_button().click()
             else:
+                remove_old = self.checkout_app_page.remove_button()
                 self.checkout_app_page.remove_button().click()
-            WebDriverWait(driver, 4).until(driver.find.element(By.NAME, 'remove_cart_item').is_enabled())
+            sleep(3)
+            WebDriverWait(driver, 4).until(EC.staleness_of(remove_old))
             items_in_the_cart_table=self.checkout_app_page.items_in_the_cart_table()
-
+#go to home page to check all cart
+#added wait becouse Back button became available not imideately after removing action
+        WebDriverWait(driver, 4).until(EC.visibility_of_element_located((By.PARTIAL_LINK_TEXT, 'Back')))
         self.checkout_app_page.back_link().click()
         WebDriverWait(driver, 4).until(EC.visibility_of_element_located((By.XPATH, "//span[@class='quantity']")))
         assert int(self.home_app_page.cart_quantity().get_attribute('textContent')) == 0
+
+
+    def test_add_to_cart(self, driver):
+        quantity=0
+        print ('Cart quantity = {} ').format(quantity)
+        self.home_app_page.most_popular()[0].click()
+        AdditionalFunctions(driver).add_item_to_cart()
+        self.home_app_page.checkout_cart_link().click()
+        AdditionalFunctions(driver).remove_item_from_cart()
+        self.checkout_app_page.back_link().click()
+        WebDriverWait(driver, 4).until(EC.visibility_of_element_located((By.XPATH, "//span[@class='quantity']")))
+        assert int(self.home_app_page.cart_quantity().get_attribute('textContent')) == 0
+        driver.selectText()
 
 
 
